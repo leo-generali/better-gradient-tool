@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Card extends Component {
+class GradientCard extends Component {
 	render() {
 
 		const style = {
@@ -13,4 +13,4 @@ class Card extends Component {
 	}
 }
 
-export default Card;
+export default GradientCard;

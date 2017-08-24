@@ -24,7 +24,7 @@ class App extends Component {
 	state = {
 		gradients: colorData,
 		currentgradients: [],
-		tags: []
+		tags: [ "all", "blue", "red"]
 	}
 
 	render() {
@@ -32,7 +32,9 @@ class App extends Component {
 			<div className="app">
 				<Header />
 					<div className="body">
-						<ColorPicker />
+						<ColorPicker 
+							tags={this.state.tags}
+						/>
 						<GradientPicker 
 							gradients={this.state.gradients}
 							currentgradients={this.state.currentgradients}

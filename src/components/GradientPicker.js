@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import Card from './Card';
+import GradientCard from './GradientCard';
 
 class GradientPicker extends Component {
-	render() {		
+	render() {
 
-		//Initial display of all gradients
-		const gradients = this.props.gradients.map(function (gradient, i){
-			return <Card styleInfo={gradient.style} key={i} />
-		})
+		const gradients = this.props.gradients
+			.filter(gradient => gradient.display)
+			.map((gradient, i) => (
+				<GradientCard styleInfo={gradient.style} key={i} />)
+			);
 
 		return(
 			<main className="gradientpicker">
-			{ gradients	}
+				{ gradients	}
 			</main>
 		);
 	}
