@@ -7,7 +7,7 @@ class ColorPickerCard extends Component {
 
 		return(
 			<div 
-				onClick={() => this.props.filterGradients("blue")}
+				onClick={() => this.props.filterGradients(tag)}
 				className={`card tag tag--${tag}`}>
 			</div>
 		);

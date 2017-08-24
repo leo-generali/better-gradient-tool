@@ -30,13 +30,12 @@ class App extends Component {
 	}
 
 	filterGradients = (color) => {
-		console.log(color);
 		const currentGradients = this.state.gradients
 			.filter(function(gradient) {
 				return gradient.tags[color];
 			});
-			
-		this.setState({ currentGradients })
+		console.log(currentGradients.length);
+		currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
 	}
 
 	render() {
