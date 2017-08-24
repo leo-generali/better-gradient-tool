@@ -18,13 +18,25 @@ import colorData from '../colordata.json'
 
 class App extends Component {
 	constructor() {
-		super();		
+		super();
+
+		this.filterGradients = this.filterGradients.bind(this);
 	}
 
 	state = {
 		gradients: colorData,
-		currentgradients: [],
+		currentGradients: colorData,
 		tags: [ "all", "blue", "red"]
+	}
+
+	filterGradients = (color) => {
+		console.log(color);
+		const currentGradients = this.state.gradients
+			.filter(function(gradient) {
+				return gradient.tags[color];
+			});
+			
+		this.setState({ currentGradients })
 	}
 
 	render() {
@@ -34,10 +46,11 @@ class App extends Component {
 					<div className="body">
 						<ColorPicker 
 							tags={this.state.tags}
+							filterGradients={this.filterGradients}
 						/>
 						<GradientPicker 
 							gradients={this.state.gradients}
-							currentgradients={this.state.currentgradients}
+							currentGradients={this.state.currentGradients}
 						/>
 					</div>
 			</div>

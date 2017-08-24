@@ -4,8 +4,15 @@ import ColorPickerCard from './ColorPickerCard';
 class ColorPicker extends Component {
 	render() {
 
+		const that = this;
 		const tags = this.props.tags.map(function (tag, i) {
-			return <ColorPickerCard tag={tag} key={i}/>
+			return (
+				<ColorPickerCard
+					filterGradients={that.props.filterGradients} 
+					tag={tag} 
+					key={i}
+				/>
+			) 
 		});
 
 		return(

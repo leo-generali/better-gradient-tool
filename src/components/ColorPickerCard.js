@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 class ColorPickerCard extends Component {
-	render() {
-		
+
+	render() {	
 		const tag = this.props.tag;
 
 		return(
-			<div className={`card tag tag--${tag}`}></div>
+			<div 
+				onClick={() => this.props.filterGradients("blue")}
+				className={`card tag tag--${tag}`}>
+			</div>
 		);
 	}
 }

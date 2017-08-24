@@ -4,7 +4,8 @@ import GradientCard from './GradientCard';
 class GradientPicker extends Component {
 	render() {
 
-		const gradients = this.props.gradients
+		// Only show the gradients that are supposed to be seen
+		const gradients = this.props.currentGradients
 			.filter(gradient => gradient.display)
 			.map((gradient, i) => (
 				<GradientCard styleInfo={gradient.style} key={i} />)
