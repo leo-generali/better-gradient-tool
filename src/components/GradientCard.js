@@ -7,8 +7,12 @@ class GradientCard extends Component {
 			background: this.props.styleInfo
 		};
 
+		const name = this.props.name;
+
 		return(
-			<div style={style} className="card"></div>
+			<div style={style} className="card">
+				{name}
+			</div>
 		);
 	}
 }

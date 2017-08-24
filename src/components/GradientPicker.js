@@ -8,7 +8,13 @@ class GradientPicker extends Component {
 		const gradients = this.props.currentGradients
 			.filter(gradient => gradient.display)
 			.map((gradient, i) => (
-				<GradientCard styleInfo={gradient.style} key={i} />)
+				<GradientCard 
+					styleInfo={gradient.style} 
+					name={gradient.name} 
+					colors={gradient.colors}
+					tags={gradient.tags}
+					key={i} 
+				/>)
 			);
 
 		return(
