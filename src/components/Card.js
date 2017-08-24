@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 
 class Card extends Component {
 	render() {
+
+		const style = {
+			background: this.props.styleInfo
+		};
+
 		return(
-			<div className="card"></div>
+			<div style={style} className="card"></div>
 		);
 	}
 }

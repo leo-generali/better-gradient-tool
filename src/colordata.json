@@ -1,0 +1,14 @@
+[
+	{
+		"name": "babyblue",
+		"tags": ["blue"],
+		"colors": ["#013A6B", "#004E95"],
+		"style": "linear-gradient(100deg, #013a6b 35%, #004e95 55%)"
+	},
+	{
+		"name": "seafoam",
+		"tags": ["blue"],
+		"colors": ["#0fb8ad", "#1fc8db", "2cb5e8"],
+		"style": "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)"
+	}
+]

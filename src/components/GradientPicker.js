@@ -6,14 +6,12 @@ class GradientPicker extends Component {
 
 		//Initial display of all gradients
 		const gradients = this.props.gradients.map(function (gradient, i){
-			return <Card key={i} />
+			return <Card styleInfo={gradient.style} key={i} />
 		})
 
 		return(
 			<main className="gradientpicker">
-			{
-				gradients
-			}
+			{ gradients	}
 			</main>
 		);
 	}
