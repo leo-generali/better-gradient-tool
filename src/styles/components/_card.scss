@@ -1,0 +1,19 @@
+// /*------------------------------------*\
+//     App
+// \*------------------------------------*/
+
+$card-height: 150px;
+$card-width: 120px;
+
+
+.card {
+	min-height: $card-height;
+	min-width: $card-width;
+	height: $card-height;
+	width: $card-width;
+
+	
+	margin: 20px;
+	
+	background-color: green;
+}

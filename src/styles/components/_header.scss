@@ -1,0 +1,17 @@
+// /*------------------------------------*\
+//     Header
+// \*------------------------------------*/
+
+.header {
+    border-bottom: 1px solid $black;
+
+}
+
+.header__container {
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 70px;
+
+	display: flex;
+	align-items: center;
+}

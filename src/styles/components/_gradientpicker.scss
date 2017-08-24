@@ -1,0 +1,12 @@
+// /*------------------------------------*\
+//     Gradient Picker
+// \*------------------------------------*/
+
+.gradientpicker {
+	width: calc(100vw - 200px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: pink;
+	overflow-y: scroll;
+}
