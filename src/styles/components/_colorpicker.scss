@@ -8,5 +8,6 @@
 	align-items: center;
 	overflow-y: scroll;
 	min-width: 200px;
-	background: red;
+	background-color: $white;
+	border-right: 1px solid black;
 }
