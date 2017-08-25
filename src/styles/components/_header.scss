@@ -6,13 +6,20 @@
 	background-color: $white;
     border-bottom: 1px solid $black;
 
+    &__container{
+		max-width: 1280px;
+		margin: 0 auto;
+		height: 70px;
+
+		display: flex;
+		align-items: center;   	
+    }
 }
 
-.header__container {
-	max-width: 1280px;
-	margin: 0 auto;
-	height: 70px;
+.created-with {
+	margin-left: auto;
+}
 
-	display: flex;
-	align-items: center;
+.heart {
+	color: #F44336;
 }

@@ -2,10 +2,50 @@
 //     Shared
 // \*------------------------------------*/
 
+$link-color: #7C4DFF;
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
 body {
     font-family: $font-stack;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	color: $black;
+}
+
+.link-wrapper {
+	position: relative;
+	cursor: pointer;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 2px;
+		top: 100%;
+		margin-top: -0.5px;
+		background: $link-color;
+	}
+
+	&:after {
+		right: 0px;
+		background: $link-color;
+		transition: width 0.25s cubic-bezier(0, 1, 1, 1);
+	}
+
+	&:hover:before {
+		background: $link-color;
+		width: 100%;
+		transition: width 0.25s cubic-bezier(0, 1, 1, 1);
+	}
+
+	&:hover:after {
+		background: transparent;
+		width: 100%;
+		transition: 0s;
+	}
 }

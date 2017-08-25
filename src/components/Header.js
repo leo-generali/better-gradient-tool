@@ -6,6 +6,7 @@ class Header extends Component {
 			<header className="header">
 				<div className="header__container">
 					<h1>Better Gradient Tool</h1>
+					<p className="created-with">Created with <span className="heart">♥</span> by <span className="link-wrapper"><a href="http://www.leogenerali.com/">Leo Generali</a></span></p>
 				</div>
 			</header>
 		);
