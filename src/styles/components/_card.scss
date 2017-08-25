@@ -5,7 +5,6 @@
 $card-height: 150px;
 $card-width: 120px;
 
-
 .card {
 	min-height: $card-height;
 	min-width: $card-width;
@@ -15,5 +14,11 @@ $card-width: 120px;
 	margin: 20px;
 	
 	background-color: white;
-	border: 1px solid black;
+    @include box_shadow(2);
+
+    &:hover {
+        transition: 300ms;
+        transform: translateY(-1px);
+        @include box_shadow(3);
+    }
 }
