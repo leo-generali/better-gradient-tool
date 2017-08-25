@@ -13,17 +13,37 @@
 		"tags": {
 			"blue": true
 		},
-		"colors": ["#0fb8ad", "#1fc8db", "2cb5e8"],
+		"colors": ["#0FB8AD", "#1FC8DB", "2CD5E8"],
 		"style": "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)",
 		"display": true
 	},
 	{
 		"name": "Chili Pepper",
 		"tags": {
-			"red": true
+			"red": true,
+			"orange": true
 		},
 		"colors": ["red", "orange"],
-		"style": "linear-gradient(111deg, red 0%, orange 100%)",
+		"style": "linear-gradient(111deg, red, orange)",
+		"display": true
+	},
+	{
+		"name": "Purple Nurple",
+		"tags": {
+			"purple": true
+		},
+		"colors": ["#B847F7", "#7F1DE2"],
+		"style": "linear-gradient(#B847F7, #7F1DE2)",
+		"display": true
+	},
+	{
+		"name": "Peach Fuzz",
+		"tags": {
+			"orange": true
+		},
+		"colors": ["#D96117", "#E5D665"],
+		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
 		"display": true
 	}
+
 ]

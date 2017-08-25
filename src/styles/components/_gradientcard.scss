@@ -4,8 +4,27 @@
 
 .card__gradient {
     border-radius: 12px;
+    position: relative;
+
+    &--name {
+    	position: relative;
+    }
 	
 	&:hover {
 		cursor: pointer;
+	}
+}
+
+@media (min-width: 600px) {
+	.card__gradient {
+	    width: 200px;
+	    height: 300px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.card__gradient {
+	    width: 250px;
+	    height: 350px;
 	}
 }

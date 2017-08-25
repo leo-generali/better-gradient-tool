@@ -6,7 +6,8 @@
 	width: calc(100vw - 200px);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	background: pink;
 	overflow-y: scroll;
+	align-items: center;
 }

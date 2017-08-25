@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
+import Popup from './Popup';
+
 class GradientCard extends Component {
-	copyCSS(css) {
+	state = { isOpen: false };
+
+	copyCSS(css, name) {
 		//This is a SUPER hacky way of copy the gradient over. Will need to look
 		//into better ways. 
 		//
@@ -13,13 +17,25 @@ class GradientCard extends Component {
 		const tempTextArea = document.createElement('textarea');
 		tempTextArea.value = css.background;
 		document.body.appendChild(tempTextArea);
-		console.log(css.background);
 		tempTextArea.select();
 		document.execCommand("copy");
 		document.body.removeChild(tempTextArea);
 	}
 
+	togglePopup = (style, name) => {
+		if (typeof style !== 'undefined') {
+		    // The variable is defined
+			this.copyCSS(style, name);
+		}
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
+
 	render() {
+		if(this.state.isOpen) {
+			setTimeout(	this.togglePopup, 1500)
+		}
 
 		const style = {
 			background: this.props.styleInfo
@@ -28,8 +44,9 @@ class GradientCard extends Component {
 		const name = this.props.name;
 
 		return(
-			<div style={style} className="card card__gradient" onClick={() => this.copyCSS(style)} >
-				{name}
+			<div style={style} ref={name} className="card card__gradient" onClick={() => this.togglePopup(style, name)} >
+				<p className="card__gradient--name">{name}</p>
+				<Popup name={name} showing={this.state.isOpen} />
 			</div>
 		);
 	}
