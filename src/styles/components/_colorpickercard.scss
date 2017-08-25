@@ -35,21 +35,28 @@
 		}
 	}
 
+	&--saved {
+		background: #FFD700;
+	} 
+
+
 	&--blue {
-		background: #38A7EC;
+		background: #2196F3;
 	}
 
 	&--red {
-		background: #FC3D39;
+		background: #F44336;
 	}
 
 	&--purple {
-		background: #B847F7;
+		background: #9C27B0;
 	}
 
 	&--orange {
-		background: #F6602D;
+		background: #FF9800;
 	}
+
+
 
 	&:hover {
 		cursor: pointer;

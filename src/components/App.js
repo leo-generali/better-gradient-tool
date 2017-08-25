@@ -26,7 +26,8 @@ class App extends Component {
 	state = {
 		gradients: colorData,
 		currentGradients: colorData,
-		tags: [ "all", "blue", "red", "purple", "orange"]
+		savedGradients: {},
+		tags: [  "all", "blue", "red", "purple", "orange"]
 	}
 
 	filterGradients = (color) => {
