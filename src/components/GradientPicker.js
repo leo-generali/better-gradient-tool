@@ -12,6 +12,7 @@ class GradientPicker extends Component {
 					styleInfo={gradient.style} 
 					name={gradient.name} 
 					colors={gradient.colors}
+					faved={gradient.faved}
 					tags={gradient.tags}
 					key={i} 
 				/>)

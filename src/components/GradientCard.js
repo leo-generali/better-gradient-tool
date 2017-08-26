@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Popup from './Popup';
+import FavedStar from './FavedStar';
 
 class GradientCard extends Component {
 	state = { isOpen: false };
@@ -34,7 +35,7 @@ class GradientCard extends Component {
 
 	render() {
 		if(this.state.isOpen) {
-			setTimeout(	this.togglePopup, 1500)
+			setTimeout(	this.togglePopup, 1500);
 		}
 
 		const style = {
@@ -42,10 +43,12 @@ class GradientCard extends Component {
 		};
 
 		const name = this.props.name;
+		const faved = this.props.faved;
 
 		return(
 			<div style={style} ref={name} className="card card__gradient" onClick={() => this.togglePopup(style, name)} >
-				<p className="card__gradient--name">{name}</p>
+				<p className="card__gradient--name">{name}</p> 
+				<FavedStar status={faved}/>
 				<Popup name={name} showing={this.state.isOpen} />
 			</div>
 		);

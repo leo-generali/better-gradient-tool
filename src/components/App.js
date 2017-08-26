@@ -27,7 +27,7 @@ class App extends Component {
 		gradients: colorData,
 		currentGradients: colorData,
 		savedGradients: {},
-		tags: [  "all", "blue", "red", "purple", "orange"]
+		tags: [ "all", "blue", "red", "purple", "orange"]
 	}
 
 	filterGradients = (color) => {
@@ -36,6 +36,16 @@ class App extends Component {
 				return gradient.tags[color];
 			});
 		console.log(currentGradients.length);
+		//If the filter lenght is zero (no gradients selected) then current gradients is 
+		currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
+	}
+
+	showFavorites = () => {
+		console.log("your faves")
+		const currentGradients = this.state.gradients
+			.filter(function(gradient) {
+				return gradient.faved;
+			});
 		currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
 	}
 
@@ -47,6 +57,7 @@ class App extends Component {
 						<ColorPicker 
 							tags={this.state.tags}
 							filterGradients={this.filterGradients}
+							showFavorites={this.showFavorites}
 						/>
 						<GradientPicker 
 							gradients={this.state.gradients}

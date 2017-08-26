@@ -3,11 +3,10 @@
 // \*------------------------------------*/
 
 .gradientpicker {
-	width: calc(100vw - 200px);
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background: pink;
 	overflow-y: scroll;
 	align-items: center;
 }

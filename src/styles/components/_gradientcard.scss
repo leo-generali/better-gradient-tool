@@ -3,16 +3,11 @@
 // \*------------------------------------*/
 
 .card__gradient {
-    border-radius: 12px;
     position: relative;
 
     &--name {
     	position: relative;
     }
-	
-	&:hover {
-		cursor: pointer;
-	}
 }
 
 @media (min-width: 600px) {

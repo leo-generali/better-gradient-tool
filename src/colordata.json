@@ -6,7 +6,8 @@
 		},
 		"colors": ["#013A6B", "#004E95"],
 		"style": "linear-gradient(100deg, #013a6b 15%, #004e95 55%)",
-		"display": true
+		"display": true,
+		"faved": true
 	},
 	{
 		"name": "Seafoam",
@@ -15,7 +16,8 @@
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "2CD5E8"],
 		"style": "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)",
-		"display": true
+		"display": true,
+		"faved": false
 	},
 	{
 		"name": "Chili Pepper",
@@ -25,7 +27,8 @@
 		},
 		"colors": ["red", "orange"],
 		"style": "linear-gradient(111deg, red, orange)",
-		"display": true
+		"display": true,
+		"faved": true
 	},
 	{
 		"name": "Purple Nurple",
@@ -34,7 +37,8 @@
 		},
 		"colors": ["#B847F7", "#7F1DE2"],
 		"style": "linear-gradient(#B847F7, #7F1DE2)",
-		"display": true
+		"display": true,
+		"faved": false
 	},
 	{
 		"name": "Peach Fuzz",
@@ -43,7 +47,8 @@
 		},
 		"colors": ["#D96117", "#E5D665"],
 		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
-		"display": true
+		"display": true,
+		"faved": false
 	}
 
 ]

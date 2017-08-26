@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ColorPickerCard from './ColorPickerCard';
+import Favorites from './Favorites';
 
 class ColorPicker extends Component {
 	render() {
@@ -17,6 +18,7 @@ class ColorPicker extends Component {
 
 		return(
 			<section className="colorpicker">
+				<Favorites showFavorites={this.props.showFavorites}/>
 				{ tags }
 			</section>
 		);

@@ -3,7 +3,6 @@
 // \*------------------------------------*/
 
 .tag {
-	border-radius: 12px;
 
 	&--all {
 		background: linear-gradient(124deg, #f44336, #f4a236, #e7f436, #88f436, #36f443, #36f4a2, #36e7f4, #3688f4, #4336f4, #a236f4, #f436e7,#f43688 );
@@ -54,11 +53,5 @@
 
 	&--orange {
 		background: #FF9800;
-	}
-
-
-
-	&:hover {
-		cursor: pointer;
 	}
 }
