@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const FavedStar = (status) => {
-	console.log(status);
-	return <p className={status.status ? "favorites-star favorites-star--faved" : "favorites-star"}>★</p>;
+class FavedStar extends Component {
+
+	render() {
+		return (
+			<div 
+				onClick={() => this.props.addToFavorites(this.props.index)}
+				className="favorites-star-bg">
+				<p className={this.props.status ? "favorites-star favorites-star--faved" : "favorites-star"}>★</p>
+			</div>
+		); 
+	}
 }
 
 export default FavedStar;

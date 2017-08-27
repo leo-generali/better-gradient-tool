@@ -2,8 +2,11 @@
 //     Favorites Button
 // \*------------------------------------*/
 
+$favorites-height: 80px;
+
 .favorites {
-	min-height: 80px;
+	min-height: $favorites-height;
+	height: $favorites-height;
 	background: red;
 }
 

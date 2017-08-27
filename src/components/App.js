@@ -21,6 +21,8 @@ class App extends Component {
 		super();
 
 		this.filterGradients = this.filterGradients.bind(this);
+
+		this.showFavorites = this.showFavorites.bind(this);
 	}
 
 	state = {
@@ -41,13 +43,22 @@ class App extends Component {
 	}
 
 	showFavorites = () => {
-		console.log("your faves")
 		const currentGradients = this.state.gradients
 			.filter(function(gradient) {
 				return gradient.faved;
 			});
 		currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
 	}
+
+	addToFavorites = (index) => {
+		const currentGradients = this.state.currentGradients;
+
+		currentGradients[index].faved = !currentGradients[index].faved;
+
+		this.setState({ currentGradients });
+	}
+
+
 
 	render() {
 		return (
@@ -62,6 +73,7 @@ class App extends Component {
 						<GradientPicker 
 							gradients={this.state.gradients}
 							currentGradients={this.state.currentGradients}
+							addToFavorites={this.addToFavorites}
 						/>
 					</div>
 			</div>
