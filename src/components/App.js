@@ -19,17 +19,14 @@ import colorData from '../colordata.json'
 class App extends Component {
 	constructor() {
 		super();
-
 		this.filterGradients = this.filterGradients.bind(this);
 		this.addToFavorites = this.addToFavorites.bind(this);
-
 		this.showFavorites = this.showFavorites.bind(this);
 	}
 
 	state = {
 		gradients: colorData,
 		currentGradients: colorData,
-		savedGradients: {},
 		tags: [ "all", "blue", "red", "purple", "orange"]
 	}
 
@@ -57,8 +54,6 @@ class App extends Component {
 		currentGradients[index].faved = !currentGradients[index].faved;
 		this.setState({ currentGradients });
 	}
-
-
 
 	render() {
 		return (
