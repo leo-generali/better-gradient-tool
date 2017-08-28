@@ -9,6 +9,8 @@
 	justify-content: space-around;
 	overflow-y: scroll;
 	align-items: center;
-	
-	perspective: 800px;
+	z-index: 1;
+
+	background: $white;
+	perspective: 2500px;
 }
