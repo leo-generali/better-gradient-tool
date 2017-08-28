@@ -70,6 +70,16 @@
 		"style": "linear-gradient(to bottom right, #00CFC3 0%, #00D78D 100%)",
 		"display": true,
 		"faved": false
-	}
-
+	},
+	{
+		"name": "Pear",
+		"tags": {
+			"yellow": true,
+			"orange": true
+		},
+		"colors": ["#F7971E", "#FFD200"],
+		"style": "linear-gradient(90deg, #F7971E, #FFD200)",
+		"display": true,
+		"faved": false
+	}	
 ]
