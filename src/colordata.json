@@ -49,6 +49,27 @@
 		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
 		"display": true,
 		"faved": false
+	},
+	{
+		"name": "Snake Eyes",
+		"tags": {
+			"purple": true,
+			"red": true
+		},
+		"colors": ["#FF2C2C", "#7A5E91"],
+		"style": "linear-gradient(-60deg, #FF2C2C, #7A5E91 95%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Granny Smith",
+		"tags": {
+			"green": true
+		},
+		"colors": ["#00CFC3", "#00D78D"],
+		"style": "linear-gradient(to bottom right, #00CFC3 0%, #00D78D 100%)",
+		"display": true,
+		"faved": false
 	}
 
 ]
