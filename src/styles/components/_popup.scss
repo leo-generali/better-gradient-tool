@@ -5,8 +5,22 @@
 .popup {
 	position: absolute;
 	max-width: 100%;
-	background: white;
+	background: $black;
+    color: $white;
 	padding: 10px;
 	bottom: 0;
 	border-radius: 12px;
+
+    animation-name: fadeinandout;
+    animation-duration: 3s;
+}
+
+@keyframes fadeinandout {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    25%, 75% {
+        opacity: 1;
+    }
 }

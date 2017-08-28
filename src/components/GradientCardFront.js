@@ -37,7 +37,7 @@ class GradientCardFront extends Component {
 
 	render() {
 		if(this.state.isOpen) {
-			setTimeout(this.togglePopup ,1000);
+			setTimeout(this.togglePopup, 2800);
 		}
 
 		const style = {
@@ -57,7 +57,7 @@ class GradientCardFront extends Component {
 					<p className="gradient-card__name">{name}</p>
 					<div className="gradient-card__options">
 						<FavedStar 
-							addToFavorites={ this.props.addToFavorites }
+							addToFavorites={this.props.addToFavorites }
 							index={this.props.index}
 							status={faved}
 						/>
