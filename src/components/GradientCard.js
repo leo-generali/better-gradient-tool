@@ -4,7 +4,11 @@ import Popup from './Popup';
 import FavedStar from './FavedStar';
 
 class GradientCard extends Component {
-	state = { isOpen: false };
+
+	state = { 
+		isOpen: false,
+		flipped: false
+	};
 
 	copyCSS(css, name) {
 		//This is a SUPER hacky way of copy the gradient over. Will need to look
@@ -33,6 +37,10 @@ class GradientCard extends Component {
 		});
 	}
 
+	flip = () => {
+		this.setState({ flipped: !this.state.flipped });
+	}
+
 	render() {
 		if(this.state.isOpen) {
 			setTimeout(	this.togglePopup, 1500);
@@ -46,26 +54,28 @@ class GradientCard extends Component {
 		const faved = this.props.faved;
 
 		return(
-			<div ref={name} className="card card__gradient" >
-				<div 
-					className="card__color" 
-					style={style}
-					onClick={() => this.togglePopup(style, name)}>
-				</div>
-				<div className="card__info">
-					<p className="card__gradient--name">{name}</p>
-					<div className="card__info-options">
-						<FavedStar 
-							addToFavorites={ this.props.addToFavorites }
-							index={this.props.index}
-							status={faved}
-						/>
-						<p className="flip-button">
-							↺
-						</p>
+			<div ref={name} className="gradient-card" >
+					<div 
+						className="gradient-card__color" 
+						style={style}
+						onClick={() => this.togglePopup(style, name)}>
 					</div>
+					<div className="gradient-card__info">
+						<p className="gradient-card__name">{name}</p>
+						<div className="gradient-card__options">
+							<FavedStar 
+								addToFavorites={ this.props.addToFavorites }
+								index={this.props.index}
+								status={faved}
+							/>
+							<p 
+								className="flip-button"
+								onClick={this.flip}>
+								↺
+							</p>
+					</div>
+					<Popup name={name} showing={this.state.isOpen} />
 				</div>
-				<Popup name={name} showing={this.state.isOpen} />
 			</div>
 		);
 	}

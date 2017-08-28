@@ -4,14 +4,38 @@
 
 $card-edge: 8px;
 
-.card {
-	&__gradient {
-    	position: relative;
+.gradient-card {
+    min-height: $card-height;
+    min-width: $card-width;
+    height: $card-height;
+    width: $card-width;
 
-        &--name {
-            display: none;
-        }
-	}
+    margin: 20px;
+    
+    background-color: white;
+    @include box_shadow(3);
+    border-radius: $border-radius;
+
+	position: relative;
+    
+    &:hover {
+        transition: 300ms;
+        transform: translateY(-1px);
+        @include box_shadow(5);
+    }
+
+    &__name {
+        display: none;
+    }
+
+    &__front {
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+
+    &__back {
+        transform: rotateY(0deg);
+    }
 
     &__color {
         border-radius: $border-radius;
@@ -25,16 +49,16 @@ $card-edge: 8px;
 
     &__info {
         padding: 0 $card-edge;
-        height: calc(35% - ($card-edge * 2);
+        height: calc(35% - #{card-height});
         display: flex;
         flex-direction: column;
+    }
 
-        &-options {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-grow: 1;
-        }
+    &__options {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
     }
 }
 
@@ -47,30 +71,28 @@ $card-edge: 8px;
 }
 
 @media (min-width: 600px) {
-    .card {
-
+    .gradient-card {
         &__color {
             height: 75%;
         }
 
         &__info {
-
             height: calc(25% - 14px);
         }
 
-        &__gradient {
-    	    width: 200px;
-    	    height: 300px;
 
-            &--name {
-                display: block;
-            }
+	    width: 200px;
+	    height: 300px;
+
+        &__name {
+            display: block;
         }
+        
     }
 }
 
 @media (min-width: 1000px) {
-	.card__gradient {
+	.gradient-card {
 	    width: 250px;
 	    height: 350px;
 	}
