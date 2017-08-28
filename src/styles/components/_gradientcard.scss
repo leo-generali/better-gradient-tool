@@ -2,13 +2,30 @@
 //     Gradient Picker
 // \*------------------------------------*/
 
-.card__gradient {
-    position: relative;
+.card {
 
-    &--name {
+	&__gradient {
     	position: relative;
+	}
+
+
+    &__color {
+        border-radius: $border-radius;
+        height: 75%;
+        border: 7px solid $white;
+    }
+
+    &__info {
+        padding: 5px;
+        background-color: $white;
+
+        &:hover {
+            cursor: default;
+        }
     }
 }
+
+
 
 @media (min-width: 600px) {
 	.card__gradient {

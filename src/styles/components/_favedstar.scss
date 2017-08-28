@@ -1,7 +1,15 @@
+// /*------------------------------------*\
+//     Favorites Star
+// \*------------------------------------*/
+
 .favorites-star {
 	font-size: 30px;
 
 	&--faved {
 		color: #FFC107;
+	}
+
+	&:hover {
+		cursor: pointer;
 	}
 }

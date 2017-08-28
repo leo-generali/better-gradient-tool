@@ -59,7 +59,7 @@ class App extends Component {
 		return (
 			<div className="app">
 				<Header />
-					<div className="body">
+					<main className="body">
 						<ColorPicker 
 							tags={this.state.tags}
 							filterGradients={this.filterGradients}
@@ -70,7 +70,7 @@ class App extends Component {
 							currentGradients={this.state.currentGradients}
 							addToFavorites={this.addToFavorites}
 						/>
-					</div>
+					</main>
 			</div>
 		);
 	}

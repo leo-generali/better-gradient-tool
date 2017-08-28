@@ -15,10 +15,10 @@ $card-width: 120px;
 	
 	background-color: white;
     @include box_shadow(3);
-    border-radius: 12px;
+    border-radius: $border-radius;
 
     &:hover {
-        cursor: pointer;
+
         transition: 300ms;
         transform: translateY(-1px);
         @include box_shadow(5);

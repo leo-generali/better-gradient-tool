@@ -46,13 +46,20 @@ class GradientCard extends Component {
 		const faved = this.props.faved;
 
 		return(
-			<div style={style} ref={name} className="card card__gradient" onClick={() => this.togglePopup(style, name)} >
-				<p className="card__gradient--name">{name}</p> 
-				<FavedStar 
-					addToFavorites={ this.props.addToFavorites }
-					index={this.props.index}
-					status={faved}
-				/>
+			<div ref={name} className="card card__gradient" >
+				<div 
+					className="card__color" 
+					style={style}
+					onClick={() => this.togglePopup(style, name)}>
+				</div>
+				<div className="card__info">
+					<p className="card__gradient--name">{name}</p> 
+					<FavedStar 
+						addToFavorites={ this.props.addToFavorites }
+						index={this.props.index}
+						status={faved}
+					/>
+				</div>
 				<Popup name={name} showing={this.state.isOpen} />
 			</div>
 		);
