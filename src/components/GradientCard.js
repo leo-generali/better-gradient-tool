@@ -60,6 +60,9 @@ class GradientCard extends Component {
 							index={this.props.index}
 							status={faved}
 						/>
+						<p className="flip-button">
+							↺
+						</p>
 					</div>
 				</div>
 				<Popup name={name} showing={this.state.isOpen} />

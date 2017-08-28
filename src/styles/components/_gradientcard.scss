@@ -31,14 +31,20 @@ $card-edge: 8px;
 
         &-options {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             flex-grow: 1;
         }
     }
 }
 
+.flip-button {
+    font-size: 30px;
 
+    &:hover {
+        cursor: pointer;
+    }
+}
 
 @media (min-width: 600px) {
     .card {
