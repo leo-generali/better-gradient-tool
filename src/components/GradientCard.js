@@ -30,6 +30,7 @@ class GradientCard extends Component {
 					name={this.props.name}
 					faved={this.props.faved}
 					index={this.props.index}
+					colors={this.props.colors}
 					flip={this.flip}
 					addToFavorites={this.props.addToFavorites}
 				/>
