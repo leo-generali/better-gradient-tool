@@ -17,9 +17,11 @@ $card-edge: 8px;
     border-radius: $border-radius;
 
 	position: relative;
+
+    transform-style: preserve-3d;
+    transition: 300ms;
     
     &:hover {
-        transition: 300ms;
         transform: translateY(-1px);
         @include box_shadow(5);
     }
@@ -30,11 +32,18 @@ $card-edge: 8px;
 
     &__front {
         height: 100%;
-        transform: rotateY(-180deg);
+        transform: rotateY(0deg);
     }
 
     &__back {
-        transform: rotateY(0deg);
+
+    }
+
+    &__side {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
     }
 
     &__color {
