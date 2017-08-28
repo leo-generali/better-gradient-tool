@@ -12,12 +12,12 @@ $card-edge: 8px;
 
     margin: 20px;
     
-    @include box_shadow(3);
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     border-radius: $border-radius;
 
     transform-style: preserve-3d;
     transition: 400ms;
-	position: relative;
+    position: relative;
 
     &__name {
         display: none;
@@ -27,13 +27,6 @@ $card-edge: 8px;
         position: absolute;
         height: 100%;
         transform: rotateY(0deg);
-
-
-        &:hover {
-            transition: 300ms;
-            transform: translateY(-1px);
-            @include box_shadow(5);
-        }
     }
 
     &__back {
@@ -84,7 +77,7 @@ $card-edge: 8px;
     &:hover {
         transition: 200ms;
         cursor: pointer;
-        transform: scale(1.2);
+        transform: translateY(-3px);
     }
 }
 

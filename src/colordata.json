@@ -1,11 +1,41 @@
 [
 	{
+		"name": "Granny Smith",
+		"tags": {
+			"green": true
+		},
+		"colors": ["#00CFC3", "#00D78D"],
+		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Bubblegum",
+		"tags": {
+			"pink": true
+		},
+		"colors": ["#F6CEEC", "#D939CD"],
+		"style": "linear-gradient(141deg, #F6CEEC, #D939CD)",
+		"display": true,
+		"faved": false
+	},
+	{
 		"name": "3000 Leagues",
 		"tags": {
 			"blue": true
 		},
 		"colors": ["#013A6B", "#004E95"],
-		"style": "linear-gradient(100deg, #013A6B 15%, #004E95 55%)",
+		"style": "linear-gradient(100deg, #013A6B, #004E95)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Peach Fuzz",
+		"tags": {
+			"orange": true
+		},
+		"colors": ["#D96117", "#E5D665"],
+		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
 		"display": true,
 		"faved": false
 	},
@@ -41,16 +71,6 @@
 		"faved": false
 	},
 	{
-		"name": "Peach Fuzz",
-		"tags": {
-			"orange": true
-		},
-		"colors": ["#D96117", "#E5D665"],
-		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
-		"display": true,
-		"faved": false
-	},
-	{
 		"name": "Snake Eyes",
 		"tags": {
 			"purple": true,
@@ -58,16 +78,6 @@
 		},
 		"colors": ["#FF2C2C", "#7A5E91"],
 		"style": "linear-gradient(-60deg, #FF2C2C, #7A5E91 95%)",
-		"display": true,
-		"faved": false
-	},
-	{
-		"name": "Granny Smith",
-		"tags": {
-			"green": true
-		},
-		"colors": ["#00CFC3", "#00D78D"],
-		"style": "linear-gradient(to bottom right, #00CFC3 0%, #00D78D 100%)",
 		"display": true,
 		"faved": false
 	},
@@ -83,12 +93,64 @@
 		"faved": false
 	},
 	{
+		"name": "Prom Dress",
+		"tags": {
+			"blue": true
+		},
+		"colors": ["#90F7EC", "#32CCBC"],
+		"style": "linear-gradient(100deg, #90F7EC, #32CCBC)",
+		"display": true,
+		"faved": false
+	},
+	{
 		"name": "Breezy Day",
 		"tags": {
 			"blue": true
 		},
 		"colors": ["#2196F3", "#81D4FA"],
 		"style": "linear-gradient(20deg, #2196F3, #81D4FA)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Nine to Five",
+		"tags": {
+			"yellow": true,
+			"pink": true
+		},
+		"colors": ["#FF00A1", "#F6FF00"],
+		"style": "linear-gradient(120deg, #FF00A1, #F6FF00)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Sunday Night Blues",
+		"tags": {
+			"indigo": true,
+			"blue": true
+		},
+		"colors": ["#4759BF", "#00068F"],
+		"style": "linear-gradient(-45deg, #4759bf 0%, #00068F 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Steel",
+		"tags": {
+			"grey": true
+		},
+		"colors": ["#9E9E9E", "#C0D4DF"],
+		"style": "linear-gradient(-45deg, #9E9E9E 0%, #C0D4DF 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Oak",
+		"tags": {
+			"brown": true
+		},
+		"colors": ["#A07464", "#50382F"],
+		"style": "linear-gradient(-45deg, #A07464 0%, #50382F 100%)",
 		"display": true,
 		"faved": false
 	}

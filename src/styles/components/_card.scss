@@ -14,13 +14,13 @@ $card-width: 120px;
 	margin: 20px;
 	
 	background-color: white;
-    @include box_shadow(3);
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     border-radius: $border-radius;
 
     &:hover {
         transition: 300ms;
         transform: translateY(-1px);
-        @include box_shadow(5);
+        box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
     }
 
     &__text {
