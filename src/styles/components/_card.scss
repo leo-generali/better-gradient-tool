@@ -18,7 +18,6 @@ $card-width: 120px;
     border-radius: $border-radius;
 
     &:hover {
-
         transition: 300ms;
         transform: translateY(-1px);
         @include box_shadow(5);

@@ -1,26 +1,39 @@
 // /*------------------------------------*\
-//     Gradient Picker
+//     Gradient Card
 // \*------------------------------------*/
 
-.card {
+$card-edge: 8px;
 
+.card {
 	&__gradient {
     	position: relative;
-	}
 
+        &--name {
+            display: none;
+        }
+	}
 
     &__color {
         border-radius: $border-radius;
-        height: 75%;
-        border: 7px solid $white;
+        height: 65%;
+        border: $card-edge solid $white;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__info {
-        padding: 5px;
-        background-color: $white;
+        padding: 0 $card-edge;
+        height: calc(35% - ($card-edge * 2);
+        display: flex;
+        flex-direction: column;
 
-        &:hover {
-            cursor: default;
+        &-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
         }
     }
 }
@@ -28,10 +41,26 @@
 
 
 @media (min-width: 600px) {
-	.card__gradient {
-	    width: 200px;
-	    height: 300px;
-	}
+    .card {
+
+        &__color {
+            height: 75%;
+        }
+
+        &__info {
+
+            height: calc(25% - 14px);
+        }
+
+        &__gradient {
+    	    width: 200px;
+    	    height: 300px;
+
+            &--name {
+                display: block;
+            }
+        }
+    }
 }
 
 @media (min-width: 1000px) {

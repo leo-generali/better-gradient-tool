@@ -53,12 +53,14 @@ class GradientCard extends Component {
 					onClick={() => this.togglePopup(style, name)}>
 				</div>
 				<div className="card__info">
-					<p className="card__gradient--name">{name}</p> 
-					<FavedStar 
-						addToFavorites={ this.props.addToFavorites }
-						index={this.props.index}
-						status={faved}
-					/>
+					<p className="card__gradient--name">{name}</p>
+					<div className="card__info-options">
+						<FavedStar 
+							addToFavorites={ this.props.addToFavorites }
+							index={this.props.index}
+							status={faved}
+						/>
+					</div>
 				</div>
 				<Popup name={name} showing={this.state.isOpen} />
 			</div>
