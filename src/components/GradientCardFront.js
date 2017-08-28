@@ -63,7 +63,7 @@ class GradientCardFront extends Component {
 						/>
 						<p 
 							className="flip-button"
-							onClick={this.flip}>
+							onClick={this.props.flip}>
 							↺
 						</p>
 					</div>
