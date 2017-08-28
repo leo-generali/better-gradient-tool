@@ -5,7 +5,7 @@
 			"blue": true
 		},
 		"colors": ["#013A6B", "#004E95"],
-		"style": "linear-gradient(100deg, #013a6b 15%, #004e95 55%)",
+		"style": "linear-gradient(100deg, #013A6B 15%, #004E95 55%)",
 		"display": true,
 		"faved": false
 	},
@@ -15,7 +15,7 @@
 			"blue": true
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "2CD5E8"],
-		"style": "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)",
+		"style": "linear-gradient(141deg, #0FB8AD 0%, #1FC8DB 51%, #2CD5E8 75%)",
 		"display": true,
 		"faved": false
 	},
@@ -81,5 +81,15 @@
 		"style": "linear-gradient(90deg, #F7971E, #FFD200)",
 		"display": true,
 		"faved": false
-	}	
+	},
+	{
+		"name": "Breezy Day",
+		"tags": {
+			"blue": true
+		},
+		"colors": ["#2196F3", "#81D4FA"],
+		"style": "linear-gradient(20deg, #2196F3, #81D4FA)",
+		"display": true,
+		"faved": false
+	}
 ]

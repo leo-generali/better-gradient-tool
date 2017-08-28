@@ -13,16 +13,16 @@ class GradientCardBack extends Component {
 				<div className="gradient-card__info">
 				<p className="gradient-card__name">{this.props.name}</p>
 					<div className="gradient-card__options">
-						<FavedStar 
-							addToFavorites={ this.props.addToFavorites }
-							index={this.props.index}
-							status={this.props.faved}
-						/>
 						<p 
 							className="flip-button"
 							onClick={this.props.flip}>
 							↻
 						</p>
+						<FavedStar 
+							addToFavorites={ this.props.addToFavorites }
+							index={this.props.index}
+							status={this.props.faved}
+						/>
 					</div>
 				</div>
 			</div>

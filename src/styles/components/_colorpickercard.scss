@@ -40,7 +40,14 @@
 	} 
 
 	&--blue {
-		background: #2196F3;
+		$blue: #2196F3;
+
+		background: $blue;
+		// box-shadow: 0 10px 20px rgba($blue, 0.19), 0 6px 6px rgba($blue,0.23);
+
+		// &:hover {
+		// 	box-shadow: 0 19px 38px rgba($blue, 0.30), 0 15px 12px rgba($blue, 0.22);
+		// }
 	}
 
 	&--red {
