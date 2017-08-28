@@ -15,18 +15,3 @@
 		transform: scale(1.2);
 	}
 }
-
-.click {
-	animation-duration: 2s;
-	animation-name: click;
-}
-
-@keyframes click {
-	from {
-		transform: scale(0.7);
-	}
-
-	to {
-		transform: scale(2);
-	}
-}

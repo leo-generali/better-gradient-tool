@@ -82,7 +82,9 @@ $card-edge: 8px;
     font-size: 30px;
 
     &:hover {
+        transition: 200ms;
         cursor: pointer;
+        transform: scale(1.2);
     }
 }
 

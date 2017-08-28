@@ -7,7 +7,7 @@ $favorites-height: 80px;
 .favorites {
 	min-height: $favorites-height;
 	height: $favorites-height;
-	background: red;
+	background: linear-gradient(-40deg, #AF4DFF, #4D4FFF);
 }
 
 .favorites__text {
