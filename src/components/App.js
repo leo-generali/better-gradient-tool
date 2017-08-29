@@ -39,6 +39,18 @@ class App extends Component {
 		const notifications = this.state.notifications;
 		notifications.push(notification);
 		this.setState({ notifications });
+		this.cleanNotifications();
+		console.log("have 3 seconds passed?");
+	}
+
+	cleanNotifications = () => {
+		const that = this;
+		const notifications = this.state.notifications;
+		setTimeout(function(){
+			console.log("yes");
+			notifications.shift();
+			that.setState({ notifications });
+		}, 3000);
 	}
 
 	filterGradients = (color) => {

@@ -6,10 +6,6 @@ import FavedStar from './FavedStar';
 import { createCopyNotification } from '../helpers/notifications';
 
 class GradientCardFront extends Component {
-	state = { 
-		isOpen: false
-	};
-
 	copyCSS(css, name) {
 		//This is a SUPER hacky way of copy the gradient over. Will need to look
 		//into better ways. 
@@ -19,6 +15,7 @@ class GradientCardFront extends Component {
 		//the newly created text, creates a text area under the body, copies it, and
 		//then removes the text area... Sneaky!
 
+		this.props.addNotification(createCopyNotification(name));
 		const tempTextArea = document.createElement('textarea');
 		tempTextArea.value = css.background;
 		document.body.appendChild(tempTextArea);
@@ -27,21 +24,7 @@ class GradientCardFront extends Component {
 		document.body.removeChild(tempTextArea);
 	}
 
-	togglePopup = (style, name) => {
-		if (typeof style !== 'undefined') {
-		    // The variable is defined
-			this.copyCSS(style, name);
-		}
-		this.setState({
-			isOpen: !this.state.isOpen
-		});
-	}
-
 	render() {
-		if(this.state.isOpen) {
-			setTimeout(this.togglePopup, 2800);
-		}
-
 		const style = {
 			background: this.props.style
 		};
@@ -54,7 +37,7 @@ class GradientCardFront extends Component {
 				<div 
 					className="gradient-card__color" 
 					style={style}
-					onClick={() => this.props.addNotification(createCopyNotification(name))} >
+					onClick={() => this.copyCSS(style, name)} >
 				</div>
 				<div className="gradient-card__info">
 					<p className="gradient-card__name">{name}</p>
@@ -71,7 +54,7 @@ class GradientCardFront extends Component {
 						</p>
 					</div>
 				</div>
-				<Popup name={name} showing={this.state.isOpen} />
+				<Popup name={name} />
 			</div>
 		);
 	}
