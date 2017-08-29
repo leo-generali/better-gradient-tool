@@ -5,6 +5,8 @@ import ColorPicker from './ColorPicker';
 import GradientPicker from './GradientPicker';
 import NotificationsTray from './NotificationsTray';
 
+import { createFaveNotification } from '../helpers/notifications';
+
 // /*------------------------------------*\
 //	This color data feeds into the app to dynamically create a list of gradients. That
 // 	is, the list will continue to grow as more data is added here.
@@ -23,12 +25,20 @@ class App extends Component {
 		this.filterGradients = this.filterGradients.bind(this);
 		this.addToFavorites = this.addToFavorites.bind(this);
 		this.showFavorites = this.showFavorites.bind(this);
+		this.addNotification = this.addNotification.bind(this);
 	}
 
 	state = {
 		gradients: colorData,
 		currentGradients: colorData,
+		notifications: [],
 		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"]
+	}
+
+	addNotification = (notification) => {
+		const notifications = this.state.notifications;
+		notifications.push(notification);
+		this.setState({ notifications });
 	}
 
 	filterGradients = (color) => {
@@ -52,6 +62,7 @@ class App extends Component {
 	addToFavorites = (index, e) => {
 		e.stopPropagation();
 		const currentGradients = this.state.currentGradients;
+		this.addNotification(createFaveNotification(currentGradients[index].name, currentGradients[index].faved));
 		currentGradients[index].faved = !currentGradients[index].faved;
 		this.setState({ currentGradients });
 	}
@@ -61,6 +72,9 @@ class App extends Component {
 			<div className="app">
 				<Header />
 					<main className="body">
+						<NotificationsTray 
+							notifications={this.state.notifications}
+						/>
 						<ColorPicker 
 							tags={this.state.tags}
 							filterGradients={this.filterGradients}
@@ -69,6 +83,8 @@ class App extends Component {
 						<GradientPicker 
 							gradients={this.state.gradients}
 							currentGradients={this.state.currentGradients}
+							notifications={this.state.notifications}
+							addNotification={this.addNotification}
 							addToFavorites={this.addToFavorites}
 						/>
 					</main>

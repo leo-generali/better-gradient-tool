@@ -4,8 +4,9 @@
 
 .notifications-tray {
     position: absolute;
-    top: 0;
-    right: 0;
-    
-    background: yellow;
+    top: 90px;
+    right: 40px;
+    width: 200px;
+
+    z-index: 4;
 }

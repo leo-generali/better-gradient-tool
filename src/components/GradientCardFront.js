@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Popup from './Popup';
 import FavedStar from './FavedStar';
 
+import { createCopyNotification } from '../helpers/notifications';
+
 class GradientCardFront extends Component {
 	state = { 
 		isOpen: false
@@ -43,6 +45,7 @@ class GradientCardFront extends Component {
 		const style = {
 			background: this.props.style
 		};
+
 		const name = this.props.name;
 		const faved =this.props.faved;
 
@@ -51,7 +54,7 @@ class GradientCardFront extends Component {
 				<div 
 					className="gradient-card__color" 
 					style={style}
-					onClick={() => this.togglePopup(style, name)}>
+					onClick={() => this.props.addNotification(createCopyNotification(name))} >
 				</div>
 				<div className="gradient-card__info">
 					<p className="gradient-card__name">{name}</p>

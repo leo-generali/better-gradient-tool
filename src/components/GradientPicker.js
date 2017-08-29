@@ -13,6 +13,7 @@ class GradientPicker extends Component {
 					colors={gradient.colors}
 					faved={gradient.faved}
 					tags={gradient.tags}
+					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 					index={i}
 					key={i} 

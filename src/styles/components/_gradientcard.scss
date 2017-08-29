@@ -19,9 +19,6 @@ $card-edge: 8px;
     transition: 400ms;
     position: relative;
 
-    animation-name: fadein;
-    animation-duration: 1s;
-
     &__name {
         display: none;
     }
