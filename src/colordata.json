@@ -118,8 +118,8 @@
 			"red": true,
 			"orange": true
 		},
-		"colors": ["red", "orange"],
-		"style": "linear-gradient(111deg, red, orange)",
+		"colors": ["#FF0000", "#FFA500"],
+		"style": "linear-gradient(111deg, #FF0000, #FFA500)",
 		"display": true,
 		"faved": false
 	},

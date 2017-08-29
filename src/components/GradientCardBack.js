@@ -7,7 +7,10 @@ class GradientCardBack extends Component {
 	render() {
 		return(
 			<div className="gradient-card__back gradient-card__side">
-				<ColorSwatch colors={this.props.colors}/>
+				<ColorSwatch 
+					colors={this.props.colors}
+					addNotification={this.props.addNotification}
+				/>
 				<div className="gradient-card__info">
 				<p className="gradient-card__name">{this.props.name}</p>
 					<div className="gradient-card__options">

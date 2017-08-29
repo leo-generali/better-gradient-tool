@@ -16,6 +16,15 @@
 	width: 70%;
 	align-items: center;
 	margin: 6px 0;
+
+	font-family: $font-stack-monospace;
+	letter-spacing: 3px;
+
+	&:hover {
+		transition: 150ms;
+		cursor: pointer;
+		transform: translateY(-2px);
+	}
 }
 
 .color-swatch-color {
@@ -27,4 +36,5 @@
 .color-swatch-color-hex {
 	width: 90px;
 	margin-left: auto;
+	text-align: right;
 }

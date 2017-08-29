@@ -9,6 +9,7 @@ class ColorSwatch extends Component {
 				<ColorSwatchColor
 					color={color}
 					key={i}
+					addNotification={this.props.addNotification}
 				/>)
 			);
 

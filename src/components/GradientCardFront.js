@@ -17,7 +17,7 @@ class GradientCardFront extends Component {
 
 		this.props.addNotification(createCopyNotification(name));
 		const tempTextArea = document.createElement('textarea');
-		tempTextArea.value = css.background;
+		tempTextArea.value = css;
 		document.body.appendChild(tempTextArea);
 		tempTextArea.select();
 		document.execCommand("copy");
@@ -37,7 +37,7 @@ class GradientCardFront extends Component {
 				<div 
 					className="gradient-card__color" 
 					style={style}
-					onClick={() => this.copyCSS(style, name)} >
+					onClick={() => this.copyCSS(style.background, name)} >
 				</div>
 				<div className="gradient-card__info">
 					<p className="gradient-card__name">{name}</p>

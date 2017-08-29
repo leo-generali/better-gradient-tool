@@ -21,10 +21,10 @@ class GradientCard extends Component {
 					name={this.props.name}
 					faved={this.props.faved}
 					style={this.props.styleInfo}
-					addNotification={this.props.addNotification}
 					togglePopup={this.togglePopup}
 					index={this.props.index}
 					flip={this.flip}
+					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 				/>
 				<GradientCardBack 
@@ -33,6 +33,7 @@ class GradientCard extends Component {
 					index={this.props.index}
 					colors={this.props.colors}
 					flip={this.flip}
+					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 				/>
 			</div>
