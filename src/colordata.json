@@ -1,5 +1,15 @@
 [
 	{
+		"name": "Dreamweaver",
+		"tags": {
+			"pink": true
+		},
+		"colors": ["#D6C7FF", "#FFC7CB"],
+		"style": "linear-gradient(-48deg, #D6C7FF, #FFC7CB)",
+		"display": true,
+		"faved": false
+	},
+	{
 		"name": "Granny Smith",
 		"tags": {
 			"green": true
@@ -47,6 +57,16 @@
 		},
 		"colors": ["#D96117", "#E5D665"],
 		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Rainforest",
+		"tags": {
+			"green": true
+		},
+		"colors": ["#79BF72", "#51A972", "#35745A"],
+		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)",
 		"display": true,
 		"faved": false
 	},
@@ -156,12 +176,52 @@
 		"faved": false
 	},
 	{
+		"name": "Obsidian",
+		"tags": {
+			"grey": true
+		},
+		"colors": ["#242424", "#686868"],
+		"style": "linear-gradient(135deg, #242424, #686868)",
+		"display": true,
+		"faved": false
+	},
+	{
 		"name": "Oak",
 		"tags": {
 			"brown": true
 		},
 		"colors": ["#A07464", "#50382F"],
 		"style": "linear-gradient(-45deg, #A07464 0%, #50382F 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Zesty",
+		"tags": {
+			"green": true
+		},
+		"colors": ["#009245", "#FCEE21"],
+		"style": "linear-gradient(-45deg, #009245 0%, #FCEE21 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Cherry Blossom",
+		"tags": {
+			"pink": true
+		},
+		"colors": ["#ffdeff", "#ff005d"],
+		"style": "linear-gradient(-45deg, #ffdeff 0%, #ff005d 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Royal Robes",
+		"tags": {
+			"purple": true
+		},
+		"colors": ["#31006c", "#a337b2"],
+		"style": "linear-gradient(-45deg, #31006c 20%, #a337b2 100%)",
 		"display": true,
 		"faved": false
 	}

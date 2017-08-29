@@ -5,7 +5,8 @@
 .popup {
     margin: 10px 0;
 	max-width: 100%;
-	background: $black;
+	background: rgba($black, 0.70);
+    box-shadow: 4px 4px 50px 0px rgba(51, 71, 79, .25);
     color: $white;
 	padding: 10px;
 	bottom: 0;
