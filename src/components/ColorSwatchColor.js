@@ -10,7 +10,7 @@ class ColorSwatchColor extends Component {
 		
 		return(
 
-			<div class="color-swatch-row">
+			<div className="color-swatch-row">
 				<div className="color-swatch-color" style={style}></div>
 				<p className="color-swatch-color-hex">{hex}</p>
 			</div>
