@@ -25,9 +25,8 @@ class ColorSwatchColor extends Component {
 	render() {
 
 		const hex = this.props.color;
-		const style = {
-			backgroundColor: hex,
-		};
+		const styleBG = { backgroundColor: hex };
+		const styleCol = { color: hex };
 		
 		return(
 			<div 
@@ -35,9 +34,12 @@ class ColorSwatchColor extends Component {
 				onClick={ () => this.copyCSS(hex, "this color") }>
 				<div 
 					className="color-swatch-color" 
-					style={style}
+					style={styleBG}
 				/>
-				<p className="color-swatch-color-hex">{hex}</p>
+				<p className="color-swatch-color-hex"
+					style={styleCol}>
+					{hex}
+				</p>
 			</div>
 		);
 	}
