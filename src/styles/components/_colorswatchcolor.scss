@@ -1,0 +1,22 @@
+// /*------------------------------------*\
+//     Color Swatch Color
+// \*------------------------------------*/
+
+.color-swatch-colors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 100%;
+}
+
+.color-swatch-row {
+	display: flex;
+	align-items: center;	
+}
+
+.color-swatch-color {
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+}

@@ -10,12 +10,33 @@
 		"faved": false
 	},
 	{
-		"name": "Granny Smith",
+		"name": "Dusk",
+		"tags": {
+			"purple": true,
+			"orange": true
+		},
+		"colors": ["#4766ff", "#C850C0", "#ffc455"],
+		"style": "linear-gradient(48deg, #4766ff 0%, #C850C0 50%, #ffc455 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Twilight",
+		"tags": {
+			"purple": true
+		},
+		"colors": ["#720328", "#620338", "#520348", "#420358", "#320368"],
+		"style": "linear-gradient(to bottom right,#720328 0%,#620338 25%,#520348 50%,#420358 75%,#320368 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Rainforest",
 		"tags": {
 			"green": true
 		},
-		"colors": ["#00CFC3", "#00D78D"],
-		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)",
+		"colors": ["#79BF72", "#51A972", "#35745A"],
+		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)",
 		"display": true,
 		"faved": false
 	},
@@ -61,12 +82,12 @@
 		"faved": false
 	},
 	{
-		"name": "Rainforest",
+		"name": "Granny Smith",
 		"tags": {
 			"green": true
 		},
-		"colors": ["#79BF72", "#51A972", "#35745A"],
-		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)",
+		"colors": ["#00CFC3", "#00D78D"],
+		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)",
 		"display": true,
 		"faved": false
 	},
@@ -77,6 +98,17 @@
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "2CD5E8"],
 		"style": "linear-gradient(141deg, #0FB8AD 0%, #1FC8DB 51%, #2CD5E8 75%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Cotton Candy",
+		"tags": {
+			"pink": true,
+			"blue": true
+		},
+		"colors": ["#FFDEE9", "#B5FFFC"],
+		"style": "linear-gradient(120deg, #FFDEE9, #B5FFFC)",
 		"display": true,
 		"faved": false
 	},
@@ -222,6 +254,17 @@
 		},
 		"colors": ["#31006c", "#a337b2"],
 		"style": "linear-gradient(-45deg, #31006c 20%, #a337b2 100%)",
+		"display": true,
+		"faved": false
+	},
+	{
+		"name": "Dusty Pink",
+		"tags": {
+			"pink": true,
+			"yellow": true
+		},
+		"colors": ["#dd7185","#eea49a", "#f7d1a3", "#fcdd04"],
+		"style": "linear-gradient(to bottom right,#dd7185 0%,#eea49a 33%,#f7d1a3 66%,#fcdd04 100%)",
 		"display": true,
 		"faved": false
 	}

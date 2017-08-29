@@ -1,5 +1,6 @@
 export function getRandomEmoji() {
-    const emojis = ["👍", "❤", "😍", "😊", "🔥", "⚡", "👌", "😂"]
+
+    const emojis = ["👍", "❤", "😍", "😊", "🔥", "⚡", "👌","💪", "✅", "💥"]
     const num = Math.floor((Math.random() * emojis.length));
     const emoji = emojis[num];
     return emoji;
