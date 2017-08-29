@@ -15,7 +15,7 @@ class GradientPicker extends Component {
 					tags={gradient.tags}
 					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
-					index={i}
+					prefixOn={this.props.prefixOn}
 					key={i} 
 				/>)
 			);

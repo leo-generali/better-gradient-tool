@@ -14,14 +14,9 @@
     }
 }
 
-@keyframes fadein {
+@keyframes fallin {
     0% {
-        transform: translateY(-10px);
         opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
+        transform: translateY(-10px) perspective(1000px)  rotateX(-120deg);
     }
 }

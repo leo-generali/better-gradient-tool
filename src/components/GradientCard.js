@@ -26,6 +26,7 @@ class GradientCard extends Component {
 					flip={this.flip}
 					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
+					prefixOn={this.props.prefixOn}
 				/>
 				<GradientCardBack 
 					name={this.props.name}

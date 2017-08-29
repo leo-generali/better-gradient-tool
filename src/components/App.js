@@ -26,13 +26,15 @@ class App extends Component {
 		this.addToFavorites = this.addToFavorites.bind(this);
 		this.showFavorites = this.showFavorites.bind(this);
 		this.addNotification = this.addNotification.bind(this);
+		this.updatePrefix = this.updatePrefix.bind(this);
 	}
 
 	state = {
 		gradients: colorData,
 		currentGradients: colorData,
 		notifications: [],
-		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"]
+		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"],
+		prefixOn: false
 	}
 
 	addNotification = (notification) => {
@@ -79,10 +81,18 @@ class App extends Component {
 		this.setState({ currentGradients });
 	}
 
+	updatePrefix() {
+		const prefixOn = !this.state.prefixOn;
+		this.setState({ prefixOn });
+	}
+
 	render() {
 		return (
 			<div className="app">
-				<Header />
+				<Header 
+					updatePrefix={this.updatePrefix}
+					prefixOn={this.state.prefixOn}
+				/>
 					<main className="body">
 						<NotificationsTray 
 							notifications={this.state.notifications}
@@ -99,6 +109,7 @@ class App extends Component {
 							notifications={this.state.notifications}
 							addNotification={this.addNotification}
 							addToFavorites={this.addToFavorites}
+							prefixOn={this.state.prefixOn}
 						/>
 					</main>
 			</div>
