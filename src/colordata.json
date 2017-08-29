@@ -12,6 +12,7 @@
 	{
 		"name": "Dusk",
 		"tags": {
+			"blue": true,
 			"purple": true,
 			"orange": true
 		},
@@ -230,6 +231,7 @@
 	{
 		"name": "Zesty",
 		"tags": {
+			"yellow": true,
 			"green": true
 		},
 		"colors": ["#009245", "#FCEE21"],
