@@ -1,5 +1,4 @@
 export function getRandomEmoji() {
-
     const emojis = ["👍", "❤", "😍", "😊", "🔥", "⚡", "👌","💪", "✅", "💥"]
     const num = Math.floor((Math.random() * emojis.length));
     const emoji = emojis[num];
@@ -12,4 +11,8 @@ export function createCopyNotification(name) {
 
 export function createFaveNotification(name, status) {
     return status ?  `You've unfavorited ${name}!` : `You've favorited ${name}! ${getRandomEmoji()}`;
+}
+
+export function createNoFaveNotification() {
+	return "You haven't favorited any gradients yet!";
 }

@@ -17,7 +17,7 @@ class ColorPicker extends Component {
 
 		return(
 			<section className="colorpicker">
-				<Favorites showFavorites={this.props.showFavorites}/>
+				<Favorites showFavorites={this.props.showFavorites} addNotification={this.props.addNotification}/>
 				{ tags }
 			</section>
 		);

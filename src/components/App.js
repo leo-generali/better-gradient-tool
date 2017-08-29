@@ -5,7 +5,7 @@ import ColorPicker from './ColorPicker';
 import GradientPicker from './GradientPicker';
 import NotificationsTray from './NotificationsTray';
 
-import { createFaveNotification } from '../helpers/notifications';
+import { createFaveNotification, createNoFaveNotification } from '../helpers/notifications';
 
 // /*------------------------------------*\
 //	This color data feeds into the app to dynamically create a list of gradients. That
@@ -40,7 +40,6 @@ class App extends Component {
 		notifications.push(notification);
 		this.setState({ notifications });
 		this.cleanNotifications();
-		console.log("have 3 seconds passed?");
 	}
 
 	cleanNotifications = () => {
@@ -68,7 +67,8 @@ class App extends Component {
 			.filter(function(gradient) {
 				return gradient.faved;
 			});
-		currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
+		console.log(currentGradients.length);
+		currentGradients.length ? this.setState({ currentGradients }) : this.addNotification( createNoFaveNotification() ) ;
 	}
 
 	addToFavorites = (index, e) => {
@@ -91,6 +91,7 @@ class App extends Component {
 							tags={this.state.tags}
 							filterGradients={this.filterGradients}
 							showFavorites={this.showFavorites}
+							addNotification={this.addNotification}
 						/>
 						<GradientPicker 
 							gradients={this.state.gradients}
