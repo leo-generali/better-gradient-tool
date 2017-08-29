@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import ColorPicker from './ColorPicker';
 import GradientPicker from './GradientPicker';
+import NotificationsTray from './NotificationsTray';
 
 // /*------------------------------------*\
 //	This color data feeds into the app to dynamically create a list of gradients. That

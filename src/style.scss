@@ -3,6 +3,7 @@
 // \*------------------------------------*/
 
 @import "styles/base/variables";
+@import "styles/base/animations";
 @import "styles/base/mixins";
 @import "styles/base/reset";
 @import "styles/base/shared";
@@ -12,6 +13,7 @@
 // \*------------------------------------*/
 
 @import "styles/components/app";
+@import "styles/components/notifications-tray";
 @import "styles/components/header";
 @import "styles/components/card";
 @import "styles/components/favorites";

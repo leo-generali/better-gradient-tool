@@ -8,7 +8,7 @@
 
     &__container{
 		max-width: 1024px;
-		margin: 0 auto;
+		margin: 0 32px;
 		height: 70px;
 
 		display: flex;
@@ -27,4 +27,12 @@
 
 .heart {
 	color: #F44336;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        &__container {
+            margin: 0 auto;
+        }
+    }
 }

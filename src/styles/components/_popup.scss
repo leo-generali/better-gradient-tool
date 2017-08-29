@@ -15,12 +15,3 @@
     animation-duration: 3s;
 }
 
-@keyframes fadeinandout {
-    0%, 100% {
-        opacity: 0;
-    }
-
-    25%, 75% {
-        opacity: 1;
-    }
-}

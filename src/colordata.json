@@ -30,6 +30,17 @@
 		"faved": false
 	},
 	{
+		"name": "ＡＥＳＴＨＥＴＩＣ",
+		"tags": {
+			"blue": true,
+			"pink": true
+		},
+		"colors": ["#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF"],
+		"style": "linear-gradient(-60deg, #FF6AD5, #C774E8, #AD8CFF, #8795E8, #94D0FF)",
+		"display": true,
+		"faved": false
+	},
+	{
 		"name": "Peach Fuzz",
 		"tags": {
 			"orange": true
