@@ -36,7 +36,7 @@ class App extends Component {
 		notifications: [],
 		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"],
 		filter: "all",
-		hasFavorites: false,
+		favoriteCount: 0,
 		prefixOn: false
 	}
 
@@ -63,7 +63,7 @@ class App extends Component {
 
 	showFavorites = () => {
 		const currentGradients = this.state.currentGradients;
-		if(this.state.hasFavorites) {
+		if(this.state.favoriteCount !== 0) {
 			this.setState({filter: "faved"});
 		} else {
 			this.addNotification( createNoFaveNotification() );
@@ -73,6 +73,8 @@ class App extends Component {
 	addToFavorites = (index, e) => {
 		e.stopPropagation();
 		const value = this.state.currentGradients[index].tags.faved;
+		let favoriteCount = this.state.favoriteCount;
+		value ? favoriteCount-- : favoriteCount++;
 		const currentGradients = update(this.state.currentGradients, {
 			[index]: {
 				tags: {
@@ -83,7 +85,7 @@ class App extends Component {
 
 		this.setState({ 
 			currentGradients,
-			hasFavorites: true
+			favoriteCount
 		 });
 	}
 
