@@ -57,12 +57,11 @@ class App extends Component {
 		}, 3000);
 	}
 
-	filterGradients = (color) => {
-		this.setState({filter: color});
+	filterGradients = (filter) => {
+		this.setState({filter});
 	}
 
 	showFavorites = () => {
-		const currentGradients = this.state.currentGradients;
 		if(this.state.favoriteCount !== 0) {
 			this.setState({filter: "faved"});
 		} else {
@@ -73,6 +72,7 @@ class App extends Component {
 	addToFavorites = (index, e) => {
 		e.stopPropagation();
 		const value = this.state.currentGradients[index].tags.faved;
+		const name = this.state.currentGradients[index].name
 		let favoriteCount = this.state.favoriteCount;
 		value ? favoriteCount-- : favoriteCount++;
 		const currentGradients = update(this.state.currentGradients, {
@@ -82,6 +82,8 @@ class App extends Component {
 				}
 			}
 		});
+
+		this.addNotification(createFaveNotification(name, value));
 
 		this.setState({ 
 			currentGradients,

@@ -17,10 +17,9 @@ class GradientCard extends Component {
 			return null;
 		}
 		
-		const name = this.props.name;
 
 		return(
-			<div ref={name} className={this.state.flipped ? "gradient-card gradient-card--flipped" : "gradient-card"} >
+			<div ref={this.props.name} className={this.state.flipped ? "gradient-card gradient-card--flipped" : "gradient-card"} >
 				<GradientCardFront 
 					name={this.props.name}
 					faved={this.props.faved}
