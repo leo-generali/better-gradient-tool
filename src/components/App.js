@@ -41,10 +41,9 @@ class App extends Component {
 	}
 
 	addNotification = (notification) => {
-		const notifications = this.state.notifications;
-		notifications.push(notification);
+		const notifications = update(this.state.notifications, {$push: [notification]})
 		this.setState({ notifications });
-		this.cleanNotifications();
+		// this.cleanNotifications();
 	}
 
 	cleanNotifications = () => {
