@@ -11,7 +11,7 @@ class Header extends Component {
 					<p className="created-with">Created with <span className="heart">♥</span> by <span className="link-wrapper"><a href="http://www.leogenerali.com/">Leo Generali</a></span></p>
 				</div>
 				<div className="header__container header__container--lower">
-					<p className="header-mods">Mods:</p><input type="checkbox" checked={checked} onClick={this.props.updatePrefix}/><p>Prefixes</p>
+					<p className="header-mods">Modifiers:</p><input className="checkbox" type="checkbox" checked={checked} onClick={this.props.updatePrefix}/><p>Prefixes</p>
 				</div>
 			</header>
 		);

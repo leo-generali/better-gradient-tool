@@ -267,7 +267,7 @@
 			"yellow": true
 		},
 		"colors": ["#DD7185","#EEA49A", "#F7D1A3", "#FCDD04"],
-		"style": "linear-gradient(to bottom right, #DD7185 0%, #EEA49A 33%, #F7D1A3 66%, #FCDD04 100%)",
+		"style": "linear-gradient(135deg, #DD7185 0%, #EEA49A 30%, #F7D1A3 60%, #FCDD04 120%)",
 		"faved": false
 	}
 ]
