@@ -5,7 +5,7 @@ class GradientPicker extends Component {
 	render() {
 		// Only show the gradients that are supposed to be seen
 		const gradients = this.props.currentGradients
-			.filter(gradient => gradient.display)
+			// .filter(gradient => gradient.display)
 			.map((gradient, i) => (
 				<GradientCard
 					styleInfo={gradient.style} 
@@ -13,10 +13,10 @@ class GradientPicker extends Component {
 					colors={gradient.colors}
 					faved={gradient.faved}
 					tags={gradient.tags}
+					showing={gradient.display}
 					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 					prefixOn={this.props.prefixOn}
-					showing={true}
 					key={i} 
 					index={i}
 				/>)

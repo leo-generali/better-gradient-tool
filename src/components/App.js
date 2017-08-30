@@ -55,13 +55,15 @@ class App extends Component {
 	}
 
 	filterGradients = (color) => {
-		const currentGradients = this.state.gradients
-			.filter(function(gradient) {
-				return gradient.tags[color];
-			});
-		console.log(currentGradients.length);
-		//If the filter length is zero (no gradients selected) then current gradients is 
-		// currentGradients.length ? this.setState({ currentGradients }) : this.setState({ currentGradients: this.state.gradients });
+		const currentGradients = this.state.gradients;
+		this.state.gradients.forEach(function(gradient, i){
+			if(gradient.tags[color] || color === "all") {
+				currentGradients[i].display = true
+			} else { 
+				currentGradients[i].display = false 
+			};
+		});
+		this.setState({ currentGradients });
 	}
 
 	showFavorites = () => {
@@ -76,8 +78,6 @@ class App extends Component {
 	addToFavorites = (index, e) => {
 		e.stopPropagation();
 		const currentGradients = this.state.currentGradients;
-
-
 		this.addNotification(createFaveNotification(currentGradients[index].name, currentGradients[index].faved));
 		currentGradients[index].faved = !currentGradients[index].faved;
 		this.setState({ currentGradients });
