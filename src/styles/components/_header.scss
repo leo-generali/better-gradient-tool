@@ -12,7 +12,11 @@
 		height: 70px;
 
 		display: flex;
-		align-items: center;   	
+		align-items: center;
+
+        &--lower {
+            height: 30px;
+        }
     }
 }
 
@@ -27,6 +31,10 @@
 
 .heart {
 	color: #F44336;
+}
+
+.header-mods {
+    margin-right: 30px;
 }
 
 @media (min-width: 1024px) {

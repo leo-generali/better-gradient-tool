@@ -13,6 +13,10 @@ class GradientCard extends Component {
 	}
 
 	render() {
+		if(!this.props.showing) {
+			return null;
+		}
+		
 		const name = this.props.name;
 
 		return(
