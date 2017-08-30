@@ -34,6 +34,7 @@ class App extends Component {
 		currentGradients: colorData,
 		notifications: [],
 		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"],
+		filter: "red",
 		prefixOn: false
 	}
 
@@ -55,15 +56,7 @@ class App extends Component {
 	}
 
 	filterGradients = (color) => {
-		const currentGradients = this.state.gradients;
-		this.state.gradients.forEach(function(gradient, i){
-			if(gradient.tags[color] || color === "all") {
-				currentGradients[i].display = true
-			} else { 
-				currentGradients[i].display = false 
-			};
-		});
-		this.setState({ currentGradients });
+		this.setState({filter: color});
 	}
 
 	showFavorites = () => {
@@ -71,7 +64,6 @@ class App extends Component {
 			.filter(function(gradient) {
 				return gradient.faved;
 			});
-		console.log(currentGradients.length);
 		currentGradients.length ? this.setState({ currentGradients }) : this.addNotification( createNoFaveNotification() ) ;
 	}
 
@@ -109,6 +101,7 @@ class App extends Component {
 							gradients={this.state.gradients}
 							currentGradients={this.state.currentGradients}
 							notifications={this.state.notifications}
+							filter={this.state.filter}
 							addNotification={this.addNotification}
 							addToFavorites={this.addToFavorites}
 							prefixOn={this.state.prefixOn}

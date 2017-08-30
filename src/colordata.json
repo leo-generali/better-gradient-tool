@@ -6,7 +6,6 @@
 		},
 		"colors": ["#D6C7FF", "#FFC7CB"],
 		"style": "linear-gradient(-48deg, #D6C7FF, #FFC7CB)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -18,7 +17,6 @@
 		},
 		"colors": ["#4766FF", "#C850C0", "#FFC455"],
 		"style": "linear-gradient(48deg, #4766FF 0%, #C850C0 50%, #FFC455 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -28,7 +26,6 @@
 		},
 		"colors": ["#720328", "#620338", "#520348", "#420358", "#320368"],
 		"style": "linear-gradient(to bottom right,#720328 0%,#620338 25%,#520348 50%,#420358 75%,#320368 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -38,7 +35,6 @@
 		},
 		"colors": ["#79BF72", "#51A972", "#35745A"],
 		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -48,7 +44,6 @@
 		},
 		"colors": ["#F6CEEC", "#D939CD"],
 		"style": "linear-gradient(141deg, #F6CEEC, #D939CD)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -58,7 +53,6 @@
 		},
 		"colors": ["#013A6B", "#004E95"],
 		"style": "linear-gradient(100deg, #013A6B, #004E95)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -69,7 +63,6 @@
 		},
 		"colors": ["#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF"],
 		"style": "linear-gradient(-60deg, #FF6AD5, #C774E8, #AD8CFF, #8795E8, #94D0FF)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -79,7 +72,6 @@
 		},
 		"colors": ["#D96117", "#E5D665"],
 		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -89,7 +81,6 @@
 		},
 		"colors": ["#00CFC3", "#00D78D"],
 		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -99,7 +90,6 @@
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "#2CD5E8"],
 		"style": "linear-gradient(141deg, #0FB8AD 0%, #1FC8DB 51%, #2CD5E8 75%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -110,7 +100,6 @@
 		},
 		"colors": ["#FFDEE9", "#B5FFFC"],
 		"style": "linear-gradient(120deg, #FFDEE9, #B5FFFC)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -121,7 +110,6 @@
 		},
 		"colors": ["#FF0000", "#FFA500"],
 		"style": "linear-gradient(111deg, #FF0000, #FFA500)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -131,7 +119,6 @@
 		},
 		"colors": ["#B847F7", "#7F1DE2"],
 		"style": "linear-gradient(#B847F7, #7F1DE2)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -142,7 +129,6 @@
 		},
 		"colors": ["#FF2C2C", "#7A5E91"],
 		"style": "linear-gradient(-60deg, #FF2C2C, #7A5E91 95%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -153,7 +139,6 @@
 		},
 		"colors": ["#F7971E", "#FFD200"],
 		"style": "linear-gradient(90deg, #F7971E, #FFD200)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -163,7 +148,6 @@
 		},
 		"colors": ["#90F7EC", "#32CCBC"],
 		"style": "linear-gradient(100deg, #90F7EC, #32CCBC)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -173,7 +157,6 @@
 		},
 		"colors": ["#2196F3", "#81D4FA"],
 		"style": "linear-gradient(20deg, #2196F3, #81D4FA)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -184,7 +167,6 @@
 		},
 		"colors": ["#FF00A1", "#F6FF00"],
 		"style": "linear-gradient(120deg, #FF00A1, #F6FF00)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -195,7 +177,6 @@
 		},
 		"colors": ["#4759BF", "#00068F"],
 		"style": "linear-gradient(-45deg, #4759bf 0%, #00068F 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -205,7 +186,6 @@
 		},
 		"colors": ["#9E9E9E", "#C0D4DF"],
 		"style": "linear-gradient(-45deg, #9E9E9E 0%, #C0D4DF 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -215,7 +195,6 @@
 		},
 		"colors": ["#242424", "#686868"],
 		"style": "linear-gradient(135deg, #242424, #686868)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -225,7 +204,6 @@
 		},
 		"colors": ["#A07464", "#50382F"],
 		"style": "linear-gradient(-45deg, #A07464 0%, #50382F 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -236,7 +214,6 @@
 		},
 		"colors": ["#009245", "#FCEE21"],
 		"style": "linear-gradient(-45deg, #009245 0%, #FCEE21 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -246,7 +223,6 @@
 		},
 		"colors": ["#FFDEFF", "#FF00D5"],
 		"style": "linear-gradient(-45deg, #FFDEFF 0%, #FF00D5 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -256,7 +232,6 @@
 		},
 		"colors": ["#31006C", "#A337B2"],
 		"style": "linear-gradient(-45deg, #31006C 20%, #A337B2 100%)",
-		"display": true,
 		"faved": false
 	},
 	{
@@ -267,7 +242,6 @@
 		},
 		"colors": ["#DD7185","#EEA49A", "#F7D1A3", "#FCDD04"],
 		"style": "linear-gradient(to bottom right, #DD7185 0%, #EEA49A 33%, #F7D1A3 66%, #FCDD04 100%)",
-		"display": true,
 		"faved": false
 	}
 ]
