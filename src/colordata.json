@@ -2,6 +2,7 @@
 	{
 		"name": "Dreamweaver",
 		"tags": {
+			"faved": false,
 			"pink": true
 		},
 		"colors": ["#D6C7FF", "#FFC7CB"],
@@ -11,6 +12,7 @@
 	{
 		"name": "Dusk",
 		"tags": {
+			"faved": false,
 			"blue": true,
 			"purple": true,
 			"orange": true
@@ -22,6 +24,7 @@
 	{
 		"name": "Twilight",
 		"tags": {
+			"faved": false,
 			"purple": true
 		},
 		"colors": ["#720328", "#620338", "#520348", "#420358", "#320368"],
@@ -31,6 +34,7 @@
 	{
 		"name": "Rainforest",
 		"tags": {
+			"faved": false,
 			"green": true
 		},
 		"colors": ["#79BF72", "#51A972", "#35745A"],
@@ -40,6 +44,7 @@
 	{
 		"name": "Bubblegum",
 		"tags": {
+			"faved": false,
 			"pink": true
 		},
 		"colors": ["#F6CEEC", "#D939CD"],
@@ -49,6 +54,7 @@
 	{
 		"name": "3000 Leagues",
 		"tags": {
+			"faved": false,
 			"blue": true
 		},
 		"colors": ["#013A6B", "#004E95"],
@@ -58,6 +64,7 @@
 	{
 		"name": "ＡＥＳＴＨＥＴＩＣ",
 		"tags": {
+			"faved": false,
 			"blue": true,
 			"pink": true
 		},
@@ -68,6 +75,7 @@
 	{
 		"name": "Peach Fuzz",
 		"tags": {
+			"faved": false,
 			"orange": true
 		},
 		"colors": ["#D96117", "#E5D665"],
@@ -77,6 +85,7 @@
 	{
 		"name": "Granny Smith",
 		"tags": {
+			"faved": false,
 			"green": true
 		},
 		"colors": ["#00CFC3", "#00D78D"],
@@ -86,6 +95,7 @@
 	{
 		"name": "Seafoam",
 		"tags": {
+			"faved": false,
 			"blue": true
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "#2CD5E8"],
@@ -95,6 +105,7 @@
 	{
 		"name": "Cotton Candy",
 		"tags": {
+			"faved": false,
 			"pink": true,
 			"blue": true
 		},
@@ -105,6 +116,7 @@
 	{
 		"name": "Chili Pepper",
 		"tags": {
+			"faved": false,
 			"red": true,
 			"orange": true
 		},
@@ -115,6 +127,7 @@
 	{
 		"name": "Purple Nurple",
 		"tags": {
+			"faved": false,
 			"purple": true
 		},
 		"colors": ["#B847F7", "#7F1DE2"],
@@ -124,6 +137,7 @@
 	{
 		"name": "Snake Eyes",
 		"tags": {
+			"faved": false,
 			"purple": true,
 			"red": true
 		},
@@ -134,6 +148,7 @@
 	{
 		"name": "Pear",
 		"tags": {
+			"faved": false,
 			"yellow": true,
 			"orange": true
 		},
@@ -144,6 +159,7 @@
 	{
 		"name": "Prom Dress",
 		"tags": {
+			"faved": false,
 			"blue": true
 		},
 		"colors": ["#90F7EC", "#32CCBC"],
@@ -153,6 +169,7 @@
 	{
 		"name": "Breezy Day",
 		"tags": {
+			"faved": false,
 			"blue": true
 		},
 		"colors": ["#2196F3", "#81D4FA"],
@@ -162,6 +179,7 @@
 	{
 		"name": "Nine to Five",
 		"tags": {
+			"faved": false,
 			"yellow": true,
 			"pink": true
 		},
@@ -172,6 +190,7 @@
 	{
 		"name": "Sunday Night Blues",
 		"tags": {
+			"faved": false,
 			"indigo": true,
 			"blue": true
 		},
@@ -182,6 +201,7 @@
 	{
 		"name": "Steel",
 		"tags": {
+			"faved": false,
 			"grey": true
 		},
 		"colors": ["#9E9E9E", "#C0D4DF"],
@@ -191,6 +211,7 @@
 	{
 		"name": "Obsidian",
 		"tags": {
+			"faved": false,
 			"grey": true
 		},
 		"colors": ["#242424", "#686868"],
@@ -200,6 +221,7 @@
 	{
 		"name": "Oak",
 		"tags": {
+			"faved": false,
 			"brown": true
 		},
 		"colors": ["#A07464", "#50382F"],
@@ -209,6 +231,7 @@
 	{
 		"name": "Zesty",
 		"tags": {
+			"faved": false,
 			"yellow": true,
 			"green": true
 		},
@@ -219,6 +242,7 @@
 	{
 		"name": "Cherry Blossom",
 		"tags": {
+			"faved": false,
 			"pink": true
 		},
 		"colors": ["#FFDEFF", "#FF00D5"],
@@ -228,6 +252,7 @@
 	{
 		"name": "Royal Robes",
 		"tags": {
+			"faved": false,
 			"purple": true
 		},
 		"colors": ["#31006C", "#A337B2"],
@@ -237,6 +262,7 @@
 	{
 		"name": "Dusty Pink",
 		"tags": {
+			"faved": false,
 			"pink": true,
 			"yellow": true
 		},

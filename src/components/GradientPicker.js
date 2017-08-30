@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import GradientCard from './GradientCard';
 
 class GradientPicker extends Component {
+
+	isFiltered (filter, gradient) {
+		if(filter !== "favorites") {
+			return filter === "all" ? gradient.tags : gradient.tags[filter];
+		} else {
+
+		}
+	}
+
 	render() {
 		const filter = this.props.filter;
 
@@ -12,9 +21,9 @@ class GradientPicker extends Component {
 					styleInfo={gradient.style} 
 					name={gradient.name} 
 					colors={gradient.colors}
-					faved={gradient.faved}
+					faved={gradient.tags.faved}
 					tags={gradient.tags}
-					showing={filter === "all" ? gradient.tags : gradient.tags[filter]}
+					showing={this.isFiltered(filter, gradient)}
 					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 					prefixOn={this.props.prefixOn}

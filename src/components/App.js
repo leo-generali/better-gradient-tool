@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import update from 'immutability-helper';
 
 import Header from './Header';
 import ColorPicker from './ColorPicker';
@@ -34,7 +35,8 @@ class App extends Component {
 		currentGradients: colorData,
 		notifications: [],
 		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"],
-		filter: "red",
+		filter: "all",
+		hasFavorites: false,
 		prefixOn: false
 	}
 
@@ -60,19 +62,29 @@ class App extends Component {
 	}
 
 	showFavorites = () => {
-		const currentGradients = this.state.gradients
-			.filter(function(gradient) {
-				return gradient.faved;
-			});
-		currentGradients.length ? this.setState({ currentGradients }) : this.addNotification( createNoFaveNotification() ) ;
+		const currentGradients = this.state.currentGradients;
+		if(this.state.hasFavorites) {
+			this.setState({filter: "faved"});
+		} else {
+			this.addNotification( createNoFaveNotification() );
+		}
 	}
 
 	addToFavorites = (index, e) => {
 		e.stopPropagation();
-		const currentGradients = this.state.currentGradients;
-		this.addNotification(createFaveNotification(currentGradients[index].name, currentGradients[index].faved));
-		currentGradients[index].faved = !currentGradients[index].faved;
-		this.setState({ currentGradients });
+		const value = this.state.currentGradients[index].tags.faved;
+		const currentGradients = update(this.state.currentGradients, {
+			[index]: {
+				tags: {
+					faved: {$set: !value}
+				}
+			}
+		});
+
+		this.setState({ 
+			currentGradients,
+			hasFavorites: true
+		 });
 	}
 
 	updatePrefix() {
