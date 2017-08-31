@@ -69,6 +69,10 @@ $card-edge: 8px;
         align-items: center;
         flex-grow: 1;
     }
+
+    &__name {
+        font-size: 20px;
+    }
 }
 
 .flip-button {
@@ -103,7 +107,7 @@ $card-edge: 8px;
 
 @media (min-width: 1000px) {
 	.gradient-card {
-	    width: 250px;
-	    height: 350px;
+	    width: 300px;
+	    height: 400px;
 	}
 }

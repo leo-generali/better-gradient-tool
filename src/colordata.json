@@ -269,5 +269,38 @@
 		"colors": ["#DD7185","#EEA49A", "#F7D1A3", "#FCDD04"],
 		"style": "linear-gradient(135deg, #DD7185 0%, #EEA49A 30%, #F7D1A3 60%, #FCDD04 120%)",
 		"faved": false
+	},
+	{
+		"name": "Steam",
+		"tags": {
+			"faved": false,
+			"grey": true,
+			"indigo": true
+		},
+		"colors": ["#2A475E","#1D2838"],
+		"style": "linear-gradient(45deg,#2A475E, #1D2838)",
+		"faved": false
+	},
+	{
+		"name": "Honey",
+		"tags": {
+			"faved": false,
+			"yellow": true,
+			"brown": true
+		},
+		"colors": ["#FED648","#964F2C"],
+		"style": "linear-gradient(135deg, #FED648, #964F2C)",
+		"faved": false
+	},
+	{
+		"name": "Toasted",
+		"tags": {
+			"faved": false,
+			"brown": true
+		},
+		"colors": ["#804A63","#B98C58"],
+		"style": "linear-gradient(135deg, #804A63, #B98C58)",
+		"faved": false
 	}
+	
 ]
