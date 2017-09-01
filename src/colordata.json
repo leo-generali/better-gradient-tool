@@ -6,8 +6,7 @@
 			"pink": true
 		},
 		"colors": ["#D6C7FF", "#FFC7CB"],
-		"style": "linear-gradient(-48deg, #D6C7FF, #FFC7CB)",
-		"faved": false
+		"style": "linear-gradient(-48deg, #D6C7FF, #FFC7CB)"
 	},
 	{
 		"name": "Dusk",
@@ -18,8 +17,7 @@
 			"orange": true
 		},
 		"colors": ["#4766FF", "#C850C0", "#FFC455"],
-		"style": "linear-gradient(48deg, #4766FF 0%, #C850C0 50%, #FFC455 100%)",
-		"faved": false
+		"style": "linear-gradient(48deg, #4766FF 0%, #C850C0 50%, #FFC455 100%)"
 	},
 	{
 		"name": "Twilight",
@@ -28,8 +26,7 @@
 			"purple": true
 		},
 		"colors": ["#720328", "#620338", "#520348", "#420358", "#320368"],
-		"style": "linear-gradient(to bottom right,#720328 0%,#620338 25%,#520348 50%,#420358 75%,#320368 100%)",
-		"faved": false
+		"style": "linear-gradient(to bottom right,#720328 0%,#620338 25%,#520348 50%,#420358 75%,#320368 100%)"
 	},
 	{
 		"name": "Rainforest",
@@ -38,8 +35,7 @@
 			"green": true
 		},
 		"colors": ["#79BF72", "#51A972", "#35745A"],
-		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)",
-		"faved": false
+		"style": "linear-gradient(to top left,#79BF72 0%,#51A972 50%,#35745A 100%)"
 	},
 	{
 		"name": "Bubblegum",
@@ -48,8 +44,7 @@
 			"pink": true
 		},
 		"colors": ["#F6CEEC", "#D939CD"],
-		"style": "linear-gradient(141deg, #F6CEEC, #D939CD)",
-		"faved": false
+		"style": "linear-gradient(141deg, #F6CEEC, #D939CD)"
 	},
 	{
 		"name": "3000 Leagues",
@@ -58,8 +53,7 @@
 			"blue": true
 		},
 		"colors": ["#013A6B", "#004E95"],
-		"style": "linear-gradient(100deg, #013A6B, #004E95)",
-		"faved": false
+		"style": "linear-gradient(100deg, #013A6B, #004E95)"
 	},
 	{
 		"name": "ＡＥＳＴＨＥＴＩＣ",
@@ -69,8 +63,7 @@
 			"pink": true
 		},
 		"colors": ["#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF"],
-		"style": "linear-gradient(-60deg, #FF6AD5, #C774E8, #AD8CFF, #8795E8, #94D0FF)",
-		"faved": false
+		"style": "linear-gradient(-60deg, #FF6AD5, #C774E8, #AD8CFF, #8795E8, #94D0FF)"
 	},
 	{
 		"name": "Peach Fuzz",
@@ -79,8 +72,7 @@
 			"orange": true
 		},
 		"colors": ["#D96117", "#E5D665"],
-		"style": "linear-gradient(-60deg, #FFC245, #FD7907)",
-		"faved": false
+		"style": "linear-gradient(-60deg, #FFC245, #FD7907)"
 	},
 	{
 		"name": "Granny Smith",
@@ -89,8 +81,7 @@
 			"green": true
 		},
 		"colors": ["#00CFC3", "#00D78D"],
-		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #00CFC3 0%, #00D78D 100%)"
 	},
 	{
 		"name": "Seafoam",
@@ -99,8 +90,7 @@
 			"blue": true
 		},
 		"colors": ["#0FB8AD", "#1FC8DB", "#2CD5E8"],
-		"style": "linear-gradient(141deg, #0FB8AD 0%, #1FC8DB 51%, #2CD5E8 75%)",
-		"faved": false
+		"style": "linear-gradient(141deg, #0FB8AD 0%, #1FC8DB 51%, #2CD5E8 75%)"
 	},
 	{
 		"name": "Cotton Candy",
@@ -110,8 +100,7 @@
 			"blue": true
 		},
 		"colors": ["#FFDEE9", "#B5FFFC"],
-		"style": "linear-gradient(120deg, #FFDEE9, #B5FFFC)",
-		"faved": false
+		"style": "linear-gradient(120deg, #FFDEE9, #B5FFFC)"
 	},
 	{
 		"name": "Chili Pepper",
@@ -121,8 +110,7 @@
 			"orange": true
 		},
 		"colors": ["#FF0000", "#FFA500"],
-		"style": "linear-gradient(111deg, #FF0000, #FFA500)",
-		"faved": false
+		"style": "linear-gradient(111deg, #FF0000, #FFA500)"
 	},
 	{
 		"name": "Purple Nurple",
@@ -131,8 +119,7 @@
 			"purple": true
 		},
 		"colors": ["#B847F7", "#7F1DE2"],
-		"style": "linear-gradient(#B847F7, #7F1DE2)",
-		"faved": false
+		"style": "linear-gradient(#B847F7, #7F1DE2)"
 	},
 	{
 		"name": "Snake Eyes",
@@ -142,8 +129,7 @@
 			"red": true
 		},
 		"colors": ["#FF2C2C", "#7A5E91"],
-		"style": "linear-gradient(-60deg, #FF2C2C, #7A5E91 95%)",
-		"faved": false
+		"style": "linear-gradient(-60deg, #FF2C2C, #7A5E91 95%)"
 	},
 	{
 		"name": "Pear",
@@ -153,8 +139,7 @@
 			"orange": true
 		},
 		"colors": ["#F7971E", "#FFD200"],
-		"style": "linear-gradient(90deg, #F7971E, #FFD200)",
-		"faved": false
+		"style": "linear-gradient(90deg, #F7971E, #FFD200)"
 	},
 	{
 		"name": "Prom Dress",
@@ -163,8 +148,7 @@
 			"blue": true
 		},
 		"colors": ["#90F7EC", "#32CCBC"],
-		"style": "linear-gradient(100deg, #90F7EC, #32CCBC)",
-		"faved": false
+		"style": "linear-gradient(100deg, #90F7EC, #32CCBC)"
 	},
 	{
 		"name": "Breezy Day",
@@ -173,8 +157,7 @@
 			"blue": true
 		},
 		"colors": ["#2196F3", "#81D4FA"],
-		"style": "linear-gradient(20deg, #2196F3, #81D4FA)",
-		"faved": false
+		"style": "linear-gradient(20deg, #2196F3, #81D4FA)"
 	},
 	{
 		"name": "Nine to Five",
@@ -184,8 +167,7 @@
 			"pink": true
 		},
 		"colors": ["#FF00A1", "#F6FF00"],
-		"style": "linear-gradient(120deg, #FF00A1, #F6FF00)",
-		"faved": false
+		"style": "linear-gradient(120deg, #FF00A1, #F6FF00)"
 	},
 	{
 		"name": "Sunday Night Blues",
@@ -195,8 +177,7 @@
 			"blue": true
 		},
 		"colors": ["#4759BF", "#00068F"],
-		"style": "linear-gradient(-45deg, #4759bf 0%, #00068F 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #4759bf 0%, #00068F 100%)"
 	},
 	{
 		"name": "Steel",
@@ -205,8 +186,7 @@
 			"grey": true
 		},
 		"colors": ["#9E9E9E", "#C0D4DF"],
-		"style": "linear-gradient(-45deg, #9E9E9E 0%, #C0D4DF 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #9E9E9E 0%, #C0D4DF 100%)"
 	},
 	{
 		"name": "Obsidian",
@@ -215,8 +195,7 @@
 			"grey": true
 		},
 		"colors": ["#242424", "#686868"],
-		"style": "linear-gradient(135deg, #242424, #686868)",
-		"faved": false
+		"style": "linear-gradient(135deg, #242424, #686868)"
 	},
 	{
 		"name": "Oak",
@@ -225,8 +204,7 @@
 			"brown": true
 		},
 		"colors": ["#A07464", "#50382F"],
-		"style": "linear-gradient(-45deg, #A07464 0%, #50382F 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #A07464 0%, #50382F 100%)"
 	},
 	{
 		"name": "Zesty",
@@ -236,8 +214,7 @@
 			"green": true
 		},
 		"colors": ["#009245", "#FCEE21"],
-		"style": "linear-gradient(-45deg, #009245 0%, #FCEE21 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #009245 0%, #FCEE21 100%)"
 	},
 	{
 		"name": "Cherry Blossom",
@@ -246,8 +223,7 @@
 			"pink": true
 		},
 		"colors": ["#FFDEFF", "#FF00D5"],
-		"style": "linear-gradient(-45deg, #FFDEFF 0%, #FF00D5 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #FFDEFF 0%, #FF00D5 100%)"
 	},
 	{
 		"name": "Royal Robes",
@@ -256,8 +232,7 @@
 			"purple": true
 		},
 		"colors": ["#31006C", "#A337B2"],
-		"style": "linear-gradient(-45deg, #31006C 20%, #A337B2 100%)",
-		"faved": false
+		"style": "linear-gradient(-45deg, #31006C 20%, #A337B2 100%)"
 	},
 	{
 		"name": "Dusty Pink",
@@ -267,8 +242,7 @@
 			"yellow": true
 		},
 		"colors": ["#DD7185","#EEA49A", "#F7D1A3", "#FCDD04"],
-		"style": "linear-gradient(135deg, #DD7185 0%, #EEA49A 30%, #F7D1A3 60%, #FCDD04 120%)",
-		"faved": false
+		"style": "linear-gradient(135deg, #DD7185 0%, #EEA49A 30%, #F7D1A3 60%, #FCDD04 120%)"
 	},
 	{
 		"name": "Steam",
@@ -278,8 +252,7 @@
 			"indigo": true
 		},
 		"colors": ["#2A475E","#1D2838"],
-		"style": "linear-gradient(45deg,#2A475E, #1D2838)",
-		"faved": false
+		"style": "linear-gradient(45deg,#2A475E, #1D2838)"
 	},
 	{
 		"name": "Honey",
@@ -289,8 +262,7 @@
 			"brown": true
 		},
 		"colors": ["#FED648","#964F2C"],
-		"style": "linear-gradient(135deg, #FED648, #964F2C)",
-		"faved": false
+		"style": "linear-gradient(135deg, #FED648, #964F2C)"
 	},
 	{
 		"name": "Toasted",
@@ -299,8 +271,7 @@
 			"brown": true
 		},
 		"colors": ["#804A63","#B98C58"],
-		"style": "linear-gradient(135deg, #804A63, #B98C58)",
-		"faved": false
+		"style": "linear-gradient(135deg, #804A63, #B98C58)"
 	}
 	
 ]

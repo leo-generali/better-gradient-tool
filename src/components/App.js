@@ -92,6 +92,23 @@ class App extends Component {
 		this.setState({ prefixOn });
 	}
 
+	componentWillMount() {
+		const localStorageGradients = localStorage.getItem('currentGradients');
+		const localStorageFavorites = localStorage.getItem('favoriteCount');
+
+		if(localStorageGradients || localStorageFavorites) {
+			this.setState({
+				currentGradients: JSON.parse(localStorageGradients),
+				favoriteCount: JSON.parse(localStorageFavorites)
+			});
+		}
+	}
+
+	componentWillUpdate(nextProps, nextState) {
+		localStorage.setItem('currentGradients', JSON.stringify(nextState.currentGradients));
+		localStorage.setItem('favoriteCount', JSON.stringify(nextState.favoriteCount));
+	}
+
 	render() {
 		return (
 			<div className="app">
