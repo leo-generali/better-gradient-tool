@@ -12,7 +12,7 @@ $card-edge: 8px;
 
     margin: 54px;
     
-    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: $box-shadow;
     border-radius: $border-radius;
 
     transform-style: preserve-3d;
@@ -48,7 +48,7 @@ $card-edge: 8px;
 
     &--hovered {
         transform: translateY(-3px);
-        box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: $box-shadow-hover;
     }
 
     &__color {
