@@ -5,6 +5,7 @@
 .header {
 	background-color: $white;
     border-bottom: 1px solid $grey;
+    border-top: 4px solid $accent-color;
 
     &__container{
 		max-width: 1024px;
@@ -15,7 +16,7 @@
 		align-items: flex-end;
 
         &--lower {
-            height: 50px;
+            height: 40px;
             align-items: center;
         }
     }
@@ -25,7 +26,6 @@
 	font-size: 32px;
 	font-weight: 200;
 }
-
 
 .created-with {
     margin-left: auto;
