@@ -5,21 +5,38 @@ import GradientCardBack from './GradientCardBack';
 
 class GradientCard extends Component {
 	state = { 
-		flipped: false
+		flipped: false,
+		hovered: false
 	};
 
 	flip = () => {
 		this.setState({ flipped: !this.state.flipped });
+	};
+
+	handleHover = () => {
+		this.setState({
+			hovered: !this.state.hovered
+		});
+	}
+
+	className(classes) {
+		let myClassName = 'gradient-card';
+		if (classes.flipped) myClassName += ' gradient-card--flipped';
+		if (classes.hovered) myClassName += ' gradient-card--hovered';
+		return myClassName;
 	}
 
 	render() {
+
+		const myClassName = this.className(this.state);
+
 		if(!this.props.showing) {
 			return null;
 		}
 		
 
 		return(
-			<div ref={this.props.name} className={this.state.flipped ? "gradient-card gradient-card--flipped" : "gradient-card"} >
+			<div ref={this.props.name} className={ myClassName } >
 				<GradientCardFront 
 					name={this.props.name}
 					faved={this.props.faved}
@@ -27,6 +44,7 @@ class GradientCard extends Component {
 					togglePopup={this.togglePopup}
 					index={this.props.index}
 					flip={this.flip}
+					handleHover={this.handleHover}
 					addNotification={this.props.addNotification}
 					addToFavorites={this.props.addToFavorites}
 					prefixOn={this.props.prefixOn}

@@ -52,7 +52,9 @@ class GradientCardFront extends Component {
 				<div 
 					className="gradient-card__color" 
 					style={style}
-					onClick={() => this.copyCSS(style.background, name)} >
+					onClick={() => this.copyCSS(style.background, name)} 
+					onMouseEnter={this.props.handleHover} 
+					onMouseLeave={this.props.handleHover} >
 				</div>
 				<div className="gradient-card__info">
 					<p className="gradient-card__name">{name}</p>
