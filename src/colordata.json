@@ -272,6 +272,36 @@
 		},
 		"colors": ["#804A63","#B98C58"],
 		"style": "linear-gradient(135deg, #804A63, #B98C58)"
+	},
+	{
+		"name": "Tequila Sunrise",
+		"tags": {
+			"faved": false,
+			"pink": true,
+			"orange": true
+		},
+		"colors": ["#FE6196","#FE9662"],
+		"style": "linear-gradient(135deg, #FE6196, #FE9662)"
+	},
+	{
+		"name": "Mint Julip",
+		"tags": {
+			"faved": false,
+			"blue": true,
+			"indigo": true
+		},
+		"colors": ["#AEA4E3","#D3FFE8"],
+		"style": "linear-gradient(45deg, #AEA4E3, #D3FFE8)"
+	},
+	{
+		"name": "Nightfall",
+		"tags": {
+			"faved": false,
+			"pink": true,
+			"indigo": true
+		},
+		"colors": ["#F8CDDA","#1D2B64","#0E153A"],
+		"style": "linear-gradient(160deg, #F8CDDA,#1D2B64 80%,#0E153A)"
 	}
-	
 ]
+
