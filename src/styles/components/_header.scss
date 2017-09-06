@@ -32,7 +32,15 @@
 }
 
 .checkbox {
-    margin-right: 10px
+    margin: 0 5px 0 0;
+}
+
+.label {
+    margin-right: 15px;
+
+    &:last-child {
+        margin: 0;
+    }
 }
 
 .heart {

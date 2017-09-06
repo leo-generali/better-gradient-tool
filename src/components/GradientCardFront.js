@@ -10,7 +10,7 @@ class GradientCardFront extends Component {
 		//This is a SUPER hacky way of copy the gradient over. Will need to look
 		//into better ways. 
 		//
-		//
+		
 		//Currently, this creates a text area that is a child of the body. It selects
 		//the newly created text, creates a text area under the body, copies it, and
 		//then removes the text area... Sneaky!
@@ -20,7 +20,14 @@ class GradientCardFront extends Component {
 		]
 		const colors = css.slice(15);
 		const unprefixed = `background-image: linear-gradient${colors};`;
-		const text = prefixOn ? addPrefixes() : unprefixed;
+
+		let text = prefixOn ? addPrefixes() : unprefixed;
+
+		if(this.props.fallbackOn) {
+			text = `background-color: ${this.props.colors[0]};\n${text}\n`;
+		}
+
+		console.log(this.props.colors[0]);
 
 		this.props.addNotification(createCopyNotification(name));
 		const tempTextArea = document.createElement('textarea');

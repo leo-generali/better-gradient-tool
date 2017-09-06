@@ -28,6 +28,7 @@ class App extends Component {
 		this.showFavorites = this.showFavorites.bind(this);
 		this.addNotification = this.addNotification.bind(this);
 		this.updatePrefix = this.updatePrefix.bind(this);
+		this.updateFallback = this.updateFallback.bind(this);
 	}
 
 	state = {
@@ -37,7 +38,8 @@ class App extends Component {
 		tags: [ "all", "red", "orange", "yellow", "green", "blue", "indigo", "purple", "pink", "grey", "brown"],
 		filter: "all",
 		favoriteCount: 0,
-		prefixOn: false
+		prefixOn: false,
+		fallbackOn: false,
 	}
 
 	addNotification = (notification) => {
@@ -88,8 +90,11 @@ class App extends Component {
 	}
 
 	updatePrefix() {
-		const prefixOn = !this.state.prefixOn;
-		this.setState({ prefixOn });
+		this.setState({ prefixOn: !this.state.prefixOn });
+	}
+
+	updateFallback() {
+		this.setState({ fallbackOn: !this.state.fallbackOn });	
 	}
 
 	// componentWillMount() {
@@ -114,7 +119,9 @@ class App extends Component {
 			<div className="app">
 				<Header 
 					updatePrefix={this.updatePrefix}
+					updateFallback={this.updateFallback}
 					prefixOn={this.state.prefixOn}
+					fallbackOn={this.state.fallbackOn}
 				/>
 					<main className="body">
 						<NotificationsTray 
@@ -134,6 +141,7 @@ class App extends Component {
 							addNotification={this.addNotification}
 							addToFavorites={this.addToFavorites}
 							prefixOn={this.state.prefixOn}
+							fallbackOn={this.state.fallbackOn}
 						/>
 					</main>
 			</div>
