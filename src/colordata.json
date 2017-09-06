@@ -302,6 +302,18 @@
 		},
 		"colors": ["#F8CDDA","#1D2B64","#0E153A"],
 		"style": "linear-gradient(160deg, #F8CDDA,#1D2B64 80%,#0E153A)"
+	},
+	{
+		"name": "Aubergine",
+		"tags": {
+			"faved": false,
+			"indigo": true,
+			"purple": true,
+			"pink": true
+		},
+		"colors": ["#F9C8D4", "#D1A4DA", "#9A76E8", "#6343EF"],
+		"style": "linear-gradient(160deg, #F9C8D4, #D1A4DA, #9A76E8, #6343EF)"
 	}
-]
 
+
+]
