@@ -313,7 +313,42 @@
 		},
 		"colors": ["#F9C8D4", "#D1A4DA", "#9A76E8", "#6343EF"],
 		"style": "linear-gradient(160deg, #F9C8D4, #D1A4DA, #9A76E8, #6343EF)"
+	},
+	{
+		"name": "Emerald",
+		"tags": {
+			"faved": false,
+			"green": true
+		},
+		"colors": ["#8EF378", "#1CBBB4"],
+		"style": "linear-gradient(160deg, #8EF378, #1CBBB4)"
+	},
+	{
+		"name": "Mossy Brook",
+		"tags": {
+			"faved": false,
+			"green": true
+		},
+		"colors": ["#DFF7DF", "#98F286"],
+		"style": "linear-gradient(160deg, #DFF7DF, #98F286)"
+	},
+	{
+		"name": "Alaska",
+		"tags": {
+			"faved": false,
+			"blue": true
+		},
+		"colors": ["#2AEEFF", "#5580EB"],
+		"style": "linear-gradient(160deg, #2AEEFF, #5580EB)"
+	},
+	{
+		"name": "Mist",
+		"tags": {
+			"faved": false,
+			"blue": true,
+			"grey": true
+		},
+		"colors": ["#E8F0F7", "#87B7E8"],
+		"style": "linear-gradient(160deg, #E8F0F7, #87B7E8)"
 	}
-
-
 ]
