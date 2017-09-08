@@ -81,7 +81,18 @@ $card-edge: 8px;
 }
 
 .flip-button {
-    font-size: 30px;
+    height: 30px;
+
+    &--flipped {
+        height: 30px;
+        transform: scaleX(-1);
+
+        &:hover {
+            transition: 200ms;
+            cursor: pointer;
+            transform: translateY(-3px) scaleX(-1);
+        }
+    }
 
     &:hover {
         transition: 200ms;

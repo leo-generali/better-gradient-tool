@@ -4,6 +4,7 @@ import Popup from './Popup';
 import FavedStar from './FavedStar';
 
 import { createCopyNotification } from '../helpers/notifications';
+import flipicon from '../img/flip.svg'; 
 
 class GradientCardFront extends Component {
 	copyCSS(css, name) {
@@ -66,16 +67,17 @@ class GradientCardFront extends Component {
 				<div className="gradient-card__info">
 					<p className="gradient-card__name">{name}</p>
 					<div className="gradient-card__options">
+						<img 
+							src={flipicon} 
+							className="flip-button"
+							onClick={this.props.flip} 
+							alt="Flip card!"
+						/>
 						<FavedStar 
 							addToFavorites={this.props.addToFavorites }
 							index={this.props.index}
 							status={faved}
 						/>
-						<p 
-							className="flip-button"
-							onClick={this.props.flip}>
-							↺
-						</p>
 					</div>
 				</div>
 				<Popup name={name} />
