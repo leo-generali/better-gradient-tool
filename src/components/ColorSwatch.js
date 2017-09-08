@@ -15,7 +15,7 @@ class ColorSwatch extends Component {
 
 		return (
 			<div className="color-swatch">
-				<h1 className="color-swatch-title">Color Swatch</h1>
+				<h1 className="color-swatch-title">Palette</h1>
 				<div className="color-swatch-colors">
 				{colors}
 				</div>
