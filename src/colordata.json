@@ -350,5 +350,42 @@
 		},
 		"colors": ["#E8F0F7", "#87B7E8"],
 		"style": "linear-gradient(160deg, #E8F0F7, #87B7E8)"
+	},
+	{
+		"name": "Grapefruit",
+		"tags": {
+			"faved": false,
+			"red": true
+		},
+		"colors": ["#FDB9BE", "#E95A7D"],
+		"style": "linear-gradient(160deg, #FDB9BE, #E95A7D)"
+	},
+	{
+		"name": "Moby Dick",
+		"tags": {
+			"faved": false,
+			"blue": true,
+			"grey": true
+		},
+		"colors": ["#A3BDED", "#6991C7"],
+		"style": "linear-gradient(160deg, #A3BDED, #6991C7)"
+	},
+	{
+		"name": "Clean Slate",
+		"tags": {
+			"faved": false,
+			"grey": true
+		},
+		"colors": ["#93A5CF", "#E4EFE9"],
+		"style": "linear-gradient(160deg, #93A5CF, #E4EFE9)"
+	},
+	{
+		"name": "Camel",
+		"tags": {
+			"faved": false,
+			"brown": true
+		},
+		"colors": ["#C79081", "#DFA579"],
+		"style": "linear-gradient(160deg, #C79081, #DFA579)"
 	}
 ]
