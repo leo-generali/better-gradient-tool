@@ -2,7 +2,7 @@
 	"name": "better-gradient-tool",
 	"version": "0.2.0",
 	"private": true,
-	"homepage": "https://github.com/leo-generali/better-gradient-tool",
+	"homepage": "https://leo-generali.github.io/better-gradient-tool/",
 	"dependencies": {
 		"immutability-helper": "^2.3.1",
 		"node-sass-chokidar": "0.0.3",
@@ -18,6 +18,10 @@
 		"start": "npm-run-all -p watch-css start-js",
 		"build": "npm run build-css && react-scripts build",
 		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"deploy" : "gh-pages -d build"
+	},
+	"devDependencies": {
+		"gh-pages": "^1.0.0"
 	}
 }
