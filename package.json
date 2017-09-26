@@ -2,6 +2,7 @@
 	"name": "better-gradient-tool",
 	"version": "0.2.0",
 	"private": true,
+	"homepage": "https://github.com/leo-generali/better-gradient-tool",
 	"dependencies": {
 		"immutability-helper": "^2.3.1",
 		"node-sass-chokidar": "0.0.3",
