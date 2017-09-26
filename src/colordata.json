@@ -387,5 +387,71 @@
 		},
 		"colors": ["#C79081", "#DFA579"],
 		"style": "linear-gradient(160deg, #C79081, #DFA579)"
+	},
+	{
+		"name": "Photon",
+		"tags": {
+			"faved": false,
+			"purple": true
+		},
+		"colors": ["#7C4DFF", "#5B1665"],
+		"style": "linear-gradient(120deg, #7C4DFF, #5B1665)"
+	},
+	{
+		"name": "Pillow Talk",
+		"tags": {
+			"faved": false,
+			"grey": true,
+			"pink": true
+		},
+		"colors": ["#E1DDF0", "#E7DDF0", "#EDDDF0"],
+		"style": "linear-gradient(120deg, #E1DDF0, #E7DDF0, #EDDDF0)"
+	},
+	{
+		"name": "Ekans",
+		"tags": {
+			"faved": false,
+			"purple": true,
+			"pink": true
+		},
+		"colors": ["#CC7DEA", "#A063BA", "#754A8A", "#4A305A", "#1F172B"],
+		"style": "linear-gradient(120deg, #CC7DEA, #A063BA, #754A8A, #4A305A, #1F172B)"
+	},
+	{
+		"name": "Shrubbery",
+		"tags": {
+			"faved": false,
+			"green": true
+		},
+		"colors": ["#7DEA85", "#68C273", "#549A61", "#3F724F", "#2B4A3C", "#17232B"],
+		"style": "linear-gradient(170deg, #7DEA85, #68C273, #549A61, #3F724F, #2B4A3C, #17232B)"
+	},
+	{
+		"name": "Candy",
+		"tags": {
+			"faved": false,
+			"green": true,
+			"blue": true
+		},
+		"colors": ["#1AFF00", "#006EFF"],
+		"style": "linear-gradient(200deg, #1AFF00, #006EFF)"
+	},
+	{
+		"name": "Dewdrops",
+		"tags": {
+			"faved": false,
+			"green": true
+		},
+		"colors": ["#F1F2B5", "#135058"],
+		"style": "linear-gradient(200deg, #F1F2B5, #135058)"
+	},
+	{
+		"name": "Boost",
+		"tags": {
+			"faved": false,
+			"purple": true
+		},
+		"colors": ["#6304D4", "#FFFF9B"],
+		"style": "linear-gradient(121deg, #6304D4, #FFFF9B)"
 	}
 ]
