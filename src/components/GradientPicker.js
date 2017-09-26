@@ -34,9 +34,11 @@ class GradientPicker extends Component {
 			);
 
 		return(
-			<main className="gradientpicker">
-				{ gradients	}
-			</main>
+			<div className="gradientpicker-container">
+				<main className="gradientpicker">
+					{ gradients	}
+				</main>
+			</div>
 		);
 	}
 }

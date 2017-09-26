@@ -2,15 +2,20 @@
 //     Gradient Picker
 // \*------------------------------------*/
 
+.gradientpicker-container {
+	flex: 1;
+	display: flex;
+	overflow: auto;
+	z-index: 10;
+}
+
 .gradientpicker {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	overflow-y: scroll;
 	align-items: center;
 	z-index: 1;
-
 	background: $white;
 	perspective: 4000px;
 }
